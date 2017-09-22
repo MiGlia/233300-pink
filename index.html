@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo header__logo--index" href="index.html">
+      <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
+    </a>
+    <button class="header__button-toggle" type="button">
+      Открыть меню
+    </button>
+    <!-- в список? -->
+    <nav class="navigation">
+      <ul class="navigation__list site-list">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current-page" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="photo.html">Конкурс</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="htmlacademy.ru">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Pink мобильное приложение, которое добавит краскок в твою жизнь</h1>
+    <div class="page-title">
+      <img class="page-title__image" src="http://placehold.it/150x100" alt="Мобильное приложение Pink">
+      <!-- сделать БГ? -->
+    </div>
+    <section class="downloads">
+      <a class="downloads__button downloads__button--border" href="#">Скачать Приложение</a>
+      <div class="downloads__item platforms">
+        <a class="platforms__app platforms__app--ios" href="#">Скачать приложение</a>
+        <a class="platforms__app platformss__app--android" href="#">Скачать приложение</a>
+        <a class="platforms__app platforms__app--windows-phone" href="#">Скачать приложение</a>
+      </div>
+      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
 
-  </body>
+
+
+  </main>
+
+
+
+
+
+
+</body>
 </html>
