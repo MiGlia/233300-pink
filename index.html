@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo header__logo--index" href="index.html">
+    <a class="header__logo">
       <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
     </a>
     <button class="header__button-toggle" type="button">
@@ -15,7 +15,7 @@
     <nav class="navigation">
       <ul class="navigation__list site-list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current-page" href="index.html">Главная</a>
+          <a class="navigation__link navigation__link--current-page">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="photo.html">Фотографии</a>
@@ -29,9 +29,9 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main class="page-title">
     <h1 class="visually-hidden">Pink мобильное приложение, которое добавит краскок в твою жизнь</h1>
-    <div class="page-title">
+    <div class="page-title__intro">
       <img class="page-title__image" src="http://placehold.it/150x100" alt="Мобильное приложение Pink">
     </div>
     <section class="downloads">
@@ -98,15 +98,15 @@
         <thead class="ptoduct__list-head">
           <tr>
             <th class="product__name">
-              Стандарт
+              <span>Стандарт</span>
               <p class="product__cost">1,99 Usd</p>
             </th>
             <th class="product__name">
-              База
+              <span>База</span>
               <p class="product__cost">3,99 Usd</p>
             </th>
             <th class="product__name">
-              Анлим
+              <span>Анлим</span>
               <p class="product__cost">9,99 Usd</p>
             </th>
           </tr>

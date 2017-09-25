@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo header__logo--index" href="index.html">
+    <a class="header__logo" href="index.html">
       <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
     </a>
     <button class="header__button-toggle" type="button">
@@ -18,7 +18,7 @@
           <a class="navigation__link" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current-page" href="photo.html">Фотографии</a>
+          <a class="navigation__link navigation__link--current-page">Фотографии</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="form.html">Конкурс</a>
@@ -29,7 +29,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main class="page-photo">
     <div class="photo-page__intro">
       <h1 class="photo-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
@@ -37,78 +37,76 @@
       <h2 class="photo-album__slogan" >Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
       <section class="photo-album__section user-photo">
         <h2 class="visually-hidden">Галлерея фотографий</h2>
-        <ul class="user-photo__list">
-          <li class="user-photo__item">
-            <p class="user-photo__picture">
-              <img class="user-photo__image user-photo__image--photo-day" src="http://placehold.it/150x100" alt="Фото пользователя">
-            </p>
-            <blockquote class="user-photo__quote">
-              <cite class="user-photo__author">Анна<span>(5 минут назад)</span></cite>
-              <p class="user-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            </blockquote>
-            <p class="user-photo__text-like user-photo__text-like--image">Нравится: 215</p>
-          </li>
-          <li class="user-photo__item">
-            <p class="user-photo__picture">
-              <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
-            </p>
-            <blockquote class="user-photo__quote">
-              <cite class="user-photo__author">Левон<span>(5 часов назад)</span></cite>
-              <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            </blockquote>
-            <p class="user-photo__text-like user-photo__text-like--image">Нравится: 356</p>
-          </li>
-          <li class="user-photo__item">
-            <p class="user-photo__picture">
-              <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
-            </p>
-            <blockquote class="user-photo__quote">
-              <cite class="user-photo__author">Антон<span>((12 часов назад)</span></cite>
-              <p class="user-photo__text">Соседи будут рады!</p>
-            </blockquote>
-            <p class="user-photo__text-like user-photo__text-like--image">Нравится: 666</p>
-          </li>
-          <li class="user-photo__item">
-            <p class="user-photo__picture">
-              <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
-            </p>
-            <blockquote class="user-photo__quote">
-              <cite class="user-photo__author">Борис<span>(20 часов назад)</span></cite>
-              <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            </blockquote>
-            <p class="user-photo__text-like user-photo__text-like--image">Нравится: 215</p>
-          </li>
-          <li class="user-photo__item">
-            <p class="user-photo__picture">
-              <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
-            </p>
-            <blockquote class="user-photo__quote">
-              <cite class="user-photo__author">Сергей<span>(25 часов назад)</span></cite>
-              <p class="user-photo__text">Самая кубанская в мире!</p>
-            </blockquote>
-            <p class="user-photo__text-like user-photo__text-like--image">Нравится: 4</p>
-          </li>
-          <li class="user-photo__item">
-            <p class="user-photo__picture">
-              <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
-            </p>
-            <blockquote class="user-photo__quote">
-              <cite class="user-photo__author">Максим<span>(40 часов назад)</span></cite>
-              <p class="user-photo__text">Где снег-то?</p>
-            </blockquote>
-            <p class="user-photo__text-like user-photo__text-like--image">Нравится: 150</p>
-          </li>
-          <li class="user-photo__item">
-            <p class="user-photo__picture">
-              <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
-            </p>
-            <blockquote class="user-photo__quote">
-              <cite class="user-photo__author">Надежда<span>(45 часов назад)</span></cite>
-              <p class="user-photo__text">Всем GM и взаимные лайки!</p>
-            </blockquote>
-            <p class="user-photo__text-like user-photo__text-like--image">Нравится: 2560</p>
-          </li>
-        </ul>
+        <article class="user-photo__item">
+          <a class="user-photo__picture" href="#">
+            <img class="user-photo__image user-photo__image--photo-day" src="http://placehold.it/150x100" alt="Фото пользователя">
+          </a>
+          <blockquote class="user-photo__quote">
+            <cite class="user-photo__author">Анна<span>(5 минут назад)</span></cite>
+            <p class="user-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          </blockquote>
+          <p class="user-photo__text-like">Нравится: 215</p>
+        </article>
+        <article class="user-photo__item">
+          <a class="user-photo__picture" href="#">
+            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+          </a>
+          <blockquote class="user-photo__quote">
+            <cite class="user-photo__author">Левон<span>(5 часов назад)</span></cite>
+            <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          </blockquote>
+          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 356</p>
+        </article>
+        <article class="user-photo__item">
+          <a class="user-photo__picture" href="#">
+            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+          </a>
+          <blockquote class="user-photo__quote">
+            <cite class="user-photo__author">Антон<span>((12 часов назад)</span></cite>
+            <p class="user-photo__text">Соседи будут рады!</p>
+          </blockquote>
+          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 666</p>
+        </article>
+        <article class="user-photo__item">
+          <a class="user-photo__picture" href="#">
+            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+          </a>
+          <blockquote class="user-photo__quote">
+            <cite class="user-photo__author">Борис<span>(20 часов назад)</span></cite>
+            <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          </blockquote>
+          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 215</p>
+        </article>
+        <article class="user-photo__item">
+          <a class="user-photo__picture" href="#">
+            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+          </a>
+          <blockquote class="user-photo__quote">
+            <cite class="user-photo__author">Сергей<span>(25 часов назад)</span></cite>
+            <p class="user-photo__text">Самая кубанская в мире!</p>
+          </blockquote>
+          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 4</p>
+        </article>
+        <article class="user-photo__item">
+          <a class="user-photo__picture" href="#">
+            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+          </a>
+          <blockquote class="user-photo__quote">
+            <cite class="user-photo__author">Максим<span>(40 часов назад)</span></cite>
+            <p class="user-photo__text">Где снег-то?</p>
+          </blockquote>
+          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 150</p>
+        </article>
+        <article class="user-photo__item">
+          <a class="user-photo__picture" href="#">
+            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+          </a>
+          <blockquote class="user-photo__quote">
+            <cite class="user-photo__author">Надежда<span>(45 часов назад)</span></cite>
+            <p class="user-photo__text">Всем GM и взаимные лайки!</p>
+          </blockquote>
+          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 2560</p>
+        </article>
       </section>
       <form class="image-load">
         <h3 class="image-load__title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</h3>
@@ -116,7 +114,7 @@
           <img src="http://placehold.it/150x100" alt="Загружаемое фото">
         </div>
         <section class="image-load__tools load-tools">
-          <ul class="load-tools--list">
+          <ul class="load-tools__list">
             <li class="load-tools__item">
               <svg class="load-tools_icon load-tools_icon--crop"></svg>
               <div class="load-tools__bar load-tools__bar--crop"></div>
