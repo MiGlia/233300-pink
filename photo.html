@@ -45,7 +45,7 @@
             <cite class="user-photo__author">Анна<span>(5 минут назад)</span></cite>
             <p class="user-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           </blockquote>
-          <p class="user-photo__text-like">Нравится: 215</p>
+          <a class="user-photo__text-like">Нравится: 215</a>
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
@@ -55,7 +55,7 @@
             <cite class="user-photo__author">Левон<span>(5 часов назад)</span></cite>
             <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           </blockquote>
-          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 356</p>
+          <a class="user-photo__text-like">Нравится: 356</a>
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
@@ -65,7 +65,7 @@
             <cite class="user-photo__author">Антон<span>((12 часов назад)</span></cite>
             <p class="user-photo__text">Соседи будут рады!</p>
           </blockquote>
-          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 666</p>
+          <a class="user-photo__text-like">Нравится: 666</a>
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
@@ -75,7 +75,7 @@
             <cite class="user-photo__author">Борис<span>(20 часов назад)</span></cite>
             <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           </blockquote>
-          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 215</p>
+          <a class="user-photo__text-like">Нравится: 215</a>
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
@@ -85,7 +85,7 @@
             <cite class="user-photo__author">Сергей<span>(25 часов назад)</span></cite>
             <p class="user-photo__text">Самая кубанская в мире!</p>
           </blockquote>
-          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 4</p>
+          <a class="user-photo__text-like">Нравится: 4</a>
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
@@ -95,7 +95,7 @@
             <cite class="user-photo__author">Максим<span>(40 часов назад)</span></cite>
             <p class="user-photo__text">Где снег-то?</p>
           </blockquote>
-          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 150</p>
+          <a class="user-photo__text-like">Нравится: 150</a>
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
@@ -105,7 +105,7 @@
             <cite class="user-photo__author">Надежда<span>(45 часов назад)</span></cite>
             <p class="user-photo__text">Всем GM и взаимные лайки!</p>
           </blockquote>
-          <p class="user-photo__text-like user-photo__text-like--image">Нравится: 2560</p>
+          <a class="user-photo__text-like">Нравится: 2560</a>
         </article>
       </section>
       <form class="image-load">
@@ -116,19 +116,16 @@
         <section class="image-load__tools load-tools">
           <ul class="load-tools__list">
             <li class="load-tools__item">
-              <svg class="load-tools_icon load-tools_icon--crop"></svg>
               <div class="load-tools__bar load-tools__bar--crop"></div>
-              <div class="load-tools__scale load-tools__scale--crop"></div>
+              <div class="load-tools__scale"></div>
+            </li>
+            <li class="load-tools__item load-tools__item--current">
+              <div class="load-tools__bar load-tools__bar--fill"></div>
+              <div class="load-tools__scale"></div>
             </li>
             <li class="load-tools__item">
-              <svg class="load-tools_icon load-tools_icon--crop"></svg>
-              <div class="load-tools__bar load-tools__bar--crop"></div>
-              <div class="load-tools__scale load-tools__scale--crop"></div>
-            </li>
-            <li class="load-tools__item">
-              <svg class="load-tools_icon load-tools_icon--crop"></svg>
-              <div class="load-tools__bar load-tools__bar--crop"></div>
-              <div class="load-tools__scale load-tools__scale--crop"></div>
+              <div class="load-tools__bar load-tools__bar--contrast"></div>
+              <div class="load-tools__scale"></div>
             </li>
           </ul>
           <button class="image-load__button-post button button--red" type="submit">Запостить</button>
