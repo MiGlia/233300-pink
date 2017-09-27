@@ -1,12 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Пинк главная</title>
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo">
+      <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
+    </a>
+    <button class="header__button-toggle" type="button">
+      Открыть меню
+    </button>
+    <nav class="navigation">
+      <ul class="navigation__list site-list">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current-page">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="photo.html">Конкурс</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="htmlacademy.ru">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-title">
+    <h1 class="visually-hidden">Pink мобильное приложение, которое добавит краскок в твою жизнь</h1>
+    <div class="page-title__intro">
+      <img class="page-title__image" src="http://placehold.it/150x100" alt="Мобильное приложение Pink">
+    </div>
+    <section class="downloads">
+      <h2 class="visually-hidden">Загрузки</h2>
+      <a class="downloads__button button" href="https://www.apple.com/itunes/working-itunes/market/">Скачать Приложение</a>
+      <div class="downloads__item platforms">
+        <a class="platforms__app platforms__app--ios" href="https://www.apple.com/itunes/working-itunes/market/">Скачать приложение для ios</a>
+        <a class="platforms__app platforms__app--android" href="https://play.google.com/store/apps/details?id=com.google.android.finsky&hl=ru">Скачать приложение android</a>
+        <a class="platforms__app platforms__app--windows-phone" href="https://www.microsoft.com/">Скачать приложение windows-phone</a>
+      </div>
+      <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+    <section class="features">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <p class="features__title">Устали от серости мегаполиса?</p>
+      <p class="features__title">Нам есть, что вам предложить!</p>
+      <ul class="features__list">
+        <li class="features__item">
+          <h3 class="features__title">Поднимает настроение</h3>
+          <p class="featers__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Меняет мир вокруг</h3>
+          <p class="featers__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Заводит новых друзей</h3>
+          <p class="featers__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+      <img class="features__image" src="http://placehold.it/150x100" alt="Всем привет">
+    </section>
+    <section class="review slider">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <ul class="rewiew__list rewiew__list--current">
+        <li class="rewiew__item">
+          <blockquote class="rewiew__quote">
+            <cite class="rewiew__name">Николай Петров</cite>
+            <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </li>
+        <li class="rewiew__item">
+          <blockquote class="rewiew__quote">
+            <cite class="rewiew__name">Николай Петров</cite>
+            <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </li>
+        <li class="rewiew__item">
+          <blockquote class="rewiew__quote">
+            <cite class="rewiew__name">Николай Петров</cite>
+            <p class="rewiew__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </li>
+      </ul>
+      <div class="review-toggles slider__toggles">
+        <button type="button" class="slider__toggles slider__toggles--current">1</button>
+        <button type="button" class="slider__toggles">2</button>
+        <button type="button" class="slider__toggles">3</button>
+      </div>
+    </section>
+    <section class="product slider">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <table class="ptoduct__list">
+        <thead class="ptoduct__list-head">
+          <tr>
+            <th class="product__name">
+              <span>Стандарт</span>
+              <p class="product__cost">1,99 Usd</p>
+            </th>
+            <th class="product__name">
+              <span>База</span>
+              <p class="product__cost">3,99 Usd</p>
+            </th>
+            <th class="product__name">
+              <span>Анлим</span>
+              <p class="product__cost">9,99 Usd</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="ptoduct__list-body">
+          <tr>
+            <td class="ptoduct__item product__item--yes">
+              Розовый фильтр
+            </td>
+            <td class="ptoduct__item product__item--yes">
+              Розовый фильтр
+            </td>
+            <td class="ptoduct__item product__item--yes">
+              Розовый фильтр
+            </td>
+          </tr>
+          <tr>
+            <td class="ptoduct__item product__item--no">
+              Смайлики
+            </td>
+            <td class="ptoduct__item product__item--yes">
+              Смайлики
+            </td>
+            <td class="ptoduct__item product__item--yes">
+              Смайлики
+            </td>
+          </tr>
+          <tr>
+            <td class="ptoduct__item product__item--no">
+              Комментарии
+            </td>
+            <td class="ptoduct__item product__item--no">
+              Комментарии
+            </td>
+            <td class="ptoduct__item product__item--yes">
+              Комментарии
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="review-toggles slider__toggles">
+        <button type="button" class="slider__toggles">1</button>
+        <button type="button" class="slider__toggles slider__toggles--current">2</button>
+        <button type="button" class="slider__toggles">3</button>
+      </div>
+    </section>
+    <section class="contact">
+      <h2 class="contact__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <h3 class="contact__text">Звоните:</h3>
+          <a class="contact__phone" href="tel:+78125556666">
+            <span class="contact__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+          </a>
+        </li>
+        <li class="contact__item">
+          <h3 class="contact__text">Пишите:</h3>
+          <a class="contact__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contact__item">
+          <h3 class="contact__text">Приезжайте в гости:</h3>
+          <p class="contact__info">ул. Большая Конюшенная, 19/8</p>
+        </li>
+      </ul>
+      <div class="map">
+      </div>
+    </section>
+  </main>
+</body>
 </html>
