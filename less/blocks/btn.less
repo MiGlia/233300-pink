@@ -1,0 +1,68 @@
+.button {
+  display: block;
+
+  font-weight: 700;
+  font-size: @font-size--bigger;
+  line-height: @line-height--base;
+  text-align: center;
+
+  &--downloads {
+    padding: 20px 40px 20px 40px;
+
+    font-weight: 700;
+    font-size: @font-size--bigger;
+    line-height: @line-height--small;
+    color: @text--white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 3px solid @text--white;
+    border-radius: 30px;
+  }
+
+  &--green {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+
+    color: @text--white;
+    text-transform: uppercase;
+
+    background-color: @bg--green;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  &--submit {
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+
+    font-weight: 700;
+    font-size: @font-size--bigger;
+    line-height: @line-height--small;
+    color: @text-pink;
+    text-decoration: none;
+
+    background-color: @bg--white;
+    border: 3px solid @text-pink;
+    border-radius: 30px;
+  }
+  &--reset {
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+
+    font-weight: 700;
+    font-size: @font-size--bigger;
+    line-height: @line-height--small;
+    color: @text--blue;
+    text-decoration: none;
+
+    background-color: @bg--white;
+    border: 3px solid @text--blue;
+    border-radius: 30px;
+    opacity: 0.1;
+  }
+}

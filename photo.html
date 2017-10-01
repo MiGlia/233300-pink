@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Pink: конкурс</title>
+  <link rel="stylesheet" href="less/general/normalize.less">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -39,7 +42,7 @@
         <h2 class="visually-hidden">Галлерея фотографий</h2>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
-            <img class="user-photo__image user-photo__image--photo-day" src="http://placehold.it/150x100" alt="Фото пользователя">
+            <img class="user-photo__image user-photo__image--photo-day" src="img\panorama-mobile@1x.jpg" alt="Фото пользователя">
           </a>
           <blockquote class="user-photo__quote">
             <cite class="user-photo__author">Анна<span>(5 минут назад)</span></cite>
@@ -49,7 +52,7 @@
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+            <img class="user-photo__image" src="img\photo-car-mobile@1x.jpg" alt="Фото пользователя">
           </a>
           <blockquote class="user-photo__quote">
             <cite class="user-photo__author">Левон<span>(5 часов назад)</span></cite>
@@ -59,7 +62,7 @@
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+            <img class="user-photo__image" src="img\photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
           </a>
           <blockquote class="user-photo__quote">
             <cite class="user-photo__author">Антон<span>((12 часов назад)</span></cite>
@@ -69,7 +72,7 @@
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+            <img class="user-photo__image" src="img\photo-fair-mobile@1x.jpg" alt="Фото пользователя">
           </a>
           <blockquote class="user-photo__quote">
             <cite class="user-photo__author">Борис<span>(20 часов назад)</span></cite>
@@ -79,7 +82,7 @@
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+            <img class="user-photo__image" src="img\photo-pov-mobile@1x.jpg" alt="Фото пользователя">
           </a>
           <blockquote class="user-photo__quote">
             <cite class="user-photo__author">Сергей<span>(25 часов назад)</span></cite>
@@ -89,7 +92,7 @@
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+            <img class="user-photo__image" src="img\photo-window-mobile@1x.jpg" alt="Фото пользователя">
           </a>
           <blockquote class="user-photo__quote">
             <cite class="user-photo__author">Максим<span>(40 часов назад)</span></cite>
@@ -99,7 +102,7 @@
         </article>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="http://placehold.it/150x100" alt="Фото пользователя">
+            <img class="user-photo__image" src="img\photo-wing-mobile@1x.jpg" alt="Фото пользователя">
           </a>
           <blockquote class="user-photo__quote">
             <cite class="user-photo__author">Надежда<span>(45 часов назад)</span></cite>
@@ -111,7 +114,7 @@
       <form class="image-load">
         <h3 class="image-load__title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</h3>
         <div class="image-load__picture">
-          <img src="http://placehold.it/150x100" alt="Загружаемое фото">
+          <img src="img\photo-road-mobile@1x.jpg" alt="Загружаемое фото">
         </div>
         <section class="image-load__tools load-tools">
           <ul class="load-tools__list">
@@ -128,8 +131,8 @@
               <div class="load-tools__scale"></div>
             </li>
           </ul>
-          <button class="image-load__button image-load__button--submit" type="submit">Запостить</button>
-          <button class="image-load__button image-load__button--reset" type="reset">Отмена</button>
+          <button class="button button--submit" type="submit">Запостить</button>
+          <button class="button button--reset" type="reset">Отмена</button>
         </section>
       </form>
     </section>
@@ -142,19 +145,19 @@
       <h3 class="visually-hidden">Мы в социальных сетях</h3>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--tw" href="#">Твиттер</a>
+          <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="#">Фейсбук</a>
+          <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--yt" href="#">Youtube</a>
+          <a class="social__link social__link--yt" href="#"><span class="visually-hidden">outube</span></a>
         </li>
       </ul>
     </section>
     <div class="footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="copyright__link button" href="https://htmlacademy.ru">Html Academy</a>
+      <a class="copyright__link button" href="https://htmlacademy.ru"><span class="visually-hidden">Html Academy</span></a>
     </div>
   </footer>
 </body>

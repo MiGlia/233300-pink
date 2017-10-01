@@ -1,0 +1,59 @@
+.user-photo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+
+  .user-photo__image {
+    background-color: @bg--grey;
+
+    &--photo-day {
+      width: 100%;
+
+      background-color: @bg--grey;
+    }
+  }
+
+  .user-photo__quote {
+    padding: 20px;
+  }
+
+  .user-photo__author {
+    font-weight: 700;
+    font-size: @font-size;
+    line-height: @line-height--base;
+    font-style: normal;
+  }
+  .user-photo__author span {
+    font-weight: 300;
+    font-size: @font-size--small;
+    line-height: line-height--base;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  .user-photo__text {
+    margin: 0;
+
+    font-weight: 300;
+    font-size: @font-size;
+    line-height: line-height--base;
+  }
+
+  .user-photo__text-like {
+    align-self: flex-start;
+    padding-left: 40px;
+
+    font-weight: 400;
+    font-size: @font-size--small;
+    line-height: line-height--big;
+    color: @text-pink;
+  }
+
+  .user-photo__item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+    background-color: @bg--grey;
+  }
+}
