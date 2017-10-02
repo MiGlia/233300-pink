@@ -1,0 +1,39 @@
+.review {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .review__name {
+    padding-bottom: 20px;
+
+    font-weight: 700;
+    font-size: @font-size--bigger;
+    line-height: line-height--base;
+    font-style: normal;
+  }
+
+  .review__quote {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .review__text {
+    padding-bottom: 40px;
+
+    font-size: @font-size;
+    line-height: @line-height--base;
+    text-align: center;
+    color: @text--blue;
+  }
+
+  .review__item {
+    display: none;
+
+    &--current {
+      display: block;
+    }
+  }
+}

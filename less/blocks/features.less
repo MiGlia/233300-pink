@@ -1,0 +1,54 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-bottom: 50px;
+
+  .features__title {
+    font-weight: 300;
+    font-size: @font-size--big;
+    line-height: @line-height--h2;
+    color: @text--blue;
+  }
+
+  .features__item {
+    padding-bottom: 30px;
+
+    list-style: none;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+  }
+
+  .features__title-item {
+    margin: 0;
+    padding-bottom: 20px;
+
+    font-weight: 700;
+    font-size: @font-size--h3;
+  }
+
+  .featers__description {
+    margin: 0;
+
+    font-weight: 400;
+    line-height: @line-height--h2;
+    color: @text--blue;
+  }
+
+  .features__item:last-child {
+    padding: 0;
+  }
+
+  .features__image {
+    align-self: center;
+    width: 157px;
+    height: 320px;
+
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+}
