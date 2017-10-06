@@ -1,3 +1,26 @@
 .header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   background-color: @bg--blue;
+}
+
+@media (min-width: @tablet--width) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop--width) {
+  .header__button-toggle {
+    display: none;
+  }
+
+  .header__wrapper {
+    display: flex;
+    min-height: 110px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }

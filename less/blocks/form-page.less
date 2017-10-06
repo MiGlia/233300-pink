@@ -18,4 +18,30 @@
     font-size: @font-size--h1;
     color: @text--white;
   }
+
+  .form-page__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet--width) {
+    .form-page__wrapper {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .form-page__title {
+      font-weight: 300;
+      font-size: 50px;
+      line-height: @line-height--h1;
+    }
+  }
+
+  @media (min-width: @desktop--width) {
+    .form-page__wrapper {
+      width: 940px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
 }

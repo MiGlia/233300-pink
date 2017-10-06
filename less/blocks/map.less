@@ -1,6 +1,50 @@
 .map {
-  min-height: 200px;
+  position: relative;
 
+  width: 100%;
+  min-height: 200px;
+  overflow: hidden;
+
+  background-color: @bg--ligth-grey;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+
+  // &::before {
+  //     content: "";
+  //     display: block;
+  //     position: absolute;
+  //     width: 100%;
+  //     height: 50px;
+  //     background-image:  url("../img/bg-triangle-white-footer.svg");
+  //     background-repeat: no-repeat;
+  //     background-position: center top;
+  //     z-index: 5;
+  //   }
+}
+
+@media (min-width: @tablet--width) {
+  .map {
+    height: 370px;
+  }
+
+  .map::before {
+    height: 80px;
+
+    background-size: 100% 80px;
+  }
+}
+
+@media (min-width: @desktop--width) {
+  .map {
+    height: 510px;
+  }
+
+  .map::before {
+    height: 150px;
+
+    background-size: 100% 150px;
+  }
 }

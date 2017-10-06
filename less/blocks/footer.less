@@ -3,6 +3,14 @@
   flex-direction: column;
   padding-top: 60px;
 
+  &--index {
+    display: none;
+
+    @media (min-width: @tablet--width) {
+      display: block;
+    }
+  }
+
   .footer__logo {
     padding-bottom: 40px;
   }
@@ -10,6 +18,27 @@
   .footer__copyright {
     display: flex;
     justify-content: center;
+  }
+
+  .footer__wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet--width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+}
+
+@media (min-width: @desktop--width) {
+  .footer__wrapper {
+    width: 940px;
   }
 }
 
@@ -46,5 +75,13 @@
 
   &--yt {
     background-image: url("../img/icon-youtube.svg");
+  }
+}
+
+@media (min-width: @desktop--width) {
+  .copyright__text {
+    font-weight: 400;
+    font-size: @font-size--bigger;
+    line-height: @line-height--small;
   }
 }

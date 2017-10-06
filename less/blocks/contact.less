@@ -42,4 +42,60 @@
       color: @text-pink;
     }
   }
+
+  .contact__info:last-child {
+    margin: 0;
+  }
+
+  .contact__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @tablet--width) {
+    .contact__title {
+      width: 400px;
+      margin: 0 auto;
+
+      font-weight: 300;
+      font-size: @font-size--bigest;
+    }
+
+    .contact__wrapper {
+      width: 620px;
+    }
+
+    .contact__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  @media (min-width: @desktop--width) {
+    .contact__wrapper {
+      width: 940px;
+      margin: 0 auto;
+    }
+
+    .contact__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .contact__item--number {
+      order: 0;
+    }
+
+    .contact__item-adress {
+      order: 2;
+    }
+
+    .contact__item--mail {
+      order: 3;
+    }
+  }
 }
