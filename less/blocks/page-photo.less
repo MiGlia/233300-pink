@@ -1,6 +1,10 @@
 .page-photo {
   background-color: @bg--white;
 
+  .page-photo__wrapper {
+    .wrapper();
+  }
+
   .page-photo__intro {
     background-color: @bg--blue;
     background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -19,11 +23,6 @@
     color: @text--white;
   }
 
-  .page-photo__wrapper {
-    width: 280px;
-    margin: 0 auto;
-  }
-
   @media (min-width: @tablet--width) {
     .page-photo__title {
       padding-bottom: 140px;
@@ -31,11 +30,6 @@
       font-weight: 300;
       font-size: 50px;
       line-height: 60px;
-    }
-
-    .page-photo__wrapper {
-      width: 620px;
-      margin: 0 auto;
     }
   }
 
@@ -46,11 +40,6 @@
       font-weight: 300;
       font-size: 50px;
       line-height: 60px;
-    }
-
-    .page-photo__wrapper {
-      width: 940px;
-      margin: 0 auto;
     }
   }
 }

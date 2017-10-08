@@ -1,6 +1,10 @@
 .contest-data {
   background-color: @bg--white;
 
+  .contest-data__wrapper--submit {
+    .wrapper();
+  }
+
   .contest-data__intro {
     width: 280px;
     margin: 0 auto;
@@ -18,9 +22,10 @@
   }
 
   .contest-data__block {
-    border: none;
     width: 280px;
     margin: 0 auto;
+
+    border: none;
   }
 
   .contest-data__list-item {
@@ -83,102 +88,128 @@
   }
 
   @media (min-width: @tablet--width) {
-    // .contest-data__block {
-    //   width: 620px;
-    background-color: @bg--white;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-
-    .contest-data__intro {
+    .contest-data__block {
       width: 620px;
+      margin: 0 auto;
 
-      font-weight: 400;
-      font-size: @font-size--h2;
-      line-height: line-height--base;
+      background-color: @bg--white;
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+
+      .contest-data__intro {
+        width: 620px;
+
+        font-weight: 400;
+        font-size: @font-size--h2;
+        line-height: line-height--base;
+      }
+
+      .contest-data__list-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+      }
+
+      .contest-data__input {
+        flex-grow: 1;
+        width: auto;
+      }
     }
 
-    .contest-data__list-item {
+    .contest-data__block--border-tablet {
+      border: none;
+    }
+
+    .contest-data__wrapper--app {
+      order: 1;
+    }
+
+    .contest-data__block--personal {
+      order: 0;
+    }
+
+    .contest-data__block--date {
+      order: 2;
+    }
+
+
+    .contest-data__wrapper-grey--achievements {
+      order: 3;
+
+      background-color: @bg--white;
+    }
+
+    .contest-data__wrapper-grey {
+      background-color: @bg--white;
+    }
+
+    .contest-data__block--textarea {
+      order: 4;
+    }
+
+    .contest-data__wrapper--submit {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      order: 5;
+      padding-top: 70px;
+
+      text-align: center;
+    }
+
+    .contest-data__wrapper button {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: @desktop--width) {
+    .contest-data__intro {
+      width: 940px;
+    }
+
+    .contest-data__form {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      margin-bottom: 50px;
+      width: 940px;
+      margin: 0 auto;
+      padding-bottom: 0;
     }
 
-    .contest-data__input {
-      flex-grow: 1;
-      width: auto;
+    .contest-data__block {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+    }
+
+    .contest-data__block--personal {
+      width: 50%;
+      padding-right: 35px;
+    }
+
+    .contest-data__wrapper--app {
+      width: 50%;
+    }
+
+    .contest-data__block--date {
+      width: 100%;
+    }
+
+    .contest-data__wrapper-grey--achievements {
+      width: 100%;
+    }
+
+    .contest-data__list--achievements {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
-  .contest-data__block--border-tablet {
-    border: none;
-  }
-
-  .contest-data__wrapper--app {
-    order: 1;
-  }
-
-  .contest-data__block--personal {
-    order: 0;
-  }
-
-  .contest-data__block--date {
-    order: 2;
-  }
-
-
-  .contest-data__wrapper-grey--achievements {
-    order: 3;
-    background-color: @bg--white;
-  }
-
-  .contest-data__block--textarea {
-    order: 4;
-  }
-
-  .contest-data__wrapper--submit {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 640px;
-    margin: 0 auto;
-    padding-top: 70px;
-
-    text-align: center;
-    order: 5;
-  }
-
-  .contest-data__wrapper button {
-    margin: 0;
-  }
-}
-
-@media (min-width: @desktop--width) {
-  .contest-data__intro {
-    width: 940px;
-  }
-
-  .contest-data__form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 940px;
-    margin: 0 auto;
-    padding-bottom: 0;
-  }
-
-  .contest-data__block {
-    margin: 0;
-  }
-
-  .contest-data__block--personal {
-    width: 50%;
-    padding-right: 35px;
-  }
-
-  .contest-data__wrapper--app {
-    width: 50%;
-    padding-left: 35px;
+  .contest-data__wrapper-grey--achievements .contest-data__list-item {
+    flex-basis: 263px;
   }
 }

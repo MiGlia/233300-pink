@@ -1,6 +1,10 @@
 .contact {
   padding-top: 50px;
 
+  .contact__wrapper {
+    .wrapper();
+  }
+
   .contact__title {
     margin: 0;
     padding-bottom: 40px;
@@ -47,11 +51,6 @@
     margin: 0;
   }
 
-  .contact__wrapper {
-    width: 280px;
-    margin: 0 auto;
-  }
-
   @media (min-width: @tablet--width) {
     .contact__title {
       width: 400px;
@@ -59,10 +58,6 @@
 
       font-weight: 300;
       font-size: @font-size--bigest;
-    }
-
-    .contact__wrapper {
-      width: 620px;
     }
 
     .contact__list {
@@ -74,10 +69,6 @@
   }
 
   @media (min-width: @desktop--width) {
-    .contact__wrapper {
-      width: 940px;
-      margin: 0 auto;
-    }
 
     .contact__list {
       display: flex;
