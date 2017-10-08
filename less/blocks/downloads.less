@@ -3,6 +3,7 @@
 
   background-color: @bg--blue;
 
+
   .downloads__text {
     margin: 0;
     padding-top: 30px;
@@ -13,5 +14,26 @@
     line-height: @line-height--base;
     text-align: center;
     color: @text--white;
+  }
+
+  .downloads__title {
+    display: none;
+  }
+
+  @media (min-width: @tablet--width) {
+    .downloads__title {
+      display: block;
+
+      font-weight: 300;
+      color: @text--white;
+    }
+  }
+}
+
+@media (min-width: @tablet--width) {
+  .downloads {
+    width: 360px;
+
+    background-color: transparent;
   }
 }

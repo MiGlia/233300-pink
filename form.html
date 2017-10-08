@@ -9,37 +9,41 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
-    </a>
-    <button class="header__button-toggle" type="button">
-      Открыть меню
-    </button>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--current-page">Конкурс</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="htmlacademy.ru">Html Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
+      </a>
+      <button class="header__button-toggle" type="button">
+        Открыть меню
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current-page">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="htmlacademy.ru">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="form-page">
-    <div class="form-page__intro">
-      <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
+    <section class="form-page__intro">
+      <div class="form-page__wrapper">
+        <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </section>
     <section class="contest-data">
       <form class="contest-data__form" method="post" action="#">
-        <h2 class="contest-data__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h2>
-        <fieldset class="contest-data__block">
+        <h2 class="contest-data__intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="form__description--full">Пожалуйста, заполните форму ниже:</span></h2>
+        <fieldset class="contest-data__block contest-data__block--border-tablet contest-data__block--personal">
           <legend class="visually-hidden">Данные о себе</legend>
           <ul class="contest-data__list">
             <li class="contest-data__list-item">
@@ -56,36 +60,38 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="contest-data__block  contest-data__block--bg-grey">
-          <legend class="contest-data__title">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="contest-data__list">
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-shark">Сделал селфи с акулой</label>
-              <input class="contest-data__input visually-hidden" type="checkbox" id="select-shark" name="select-shark" checked>
-            </li>
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-beach">Обгорел на пляже</label>
-              <input class="contest-data__input visually-hidden" type="checkbox" id="select-beach" name="select-beach" checked>
-            </li>
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-norris">Видел Чака Норриса</label>
-              <input class="contest-data__input visually-hidden" type="checkbox" id="select-norris" name="select-norris">
-            </li>
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-souvenir">Накупил сувениров</label>
-              <input class="contest-data__input visually-hidden" type="checkbox" id="select-souvenir" name="select-souvenir" >
-            </li>
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-tower">Удержал башню</label>
-              <input class="contest-data__input visually-hidden" type="checkbox" id="select-tower" name="select-tower" checked>
-            </li>
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-hotel">Разгромил отель</label>
-              <input class="contest-data__input visually-hidden" type="checkbox" id="select-hotel" name="select-hotel">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="contest-data__block">
+        <div class="contest-data__wrapper-grey contest-data__wrapper-grey--achievements">
+          <fieldset class="contest-data__block">
+            <legend class="contest-data__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="contest-data__list contest-data__list--achievements">
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-shark">Сделал селфи с акулой</label>
+                <input class="contest-data__input visually-hidden" type="checkbox" id="select-shark" name="select-shark" checked>
+              </li>
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-beach">Обгорел на пляже</label>
+                <input class="contest-data__input visually-hidden" type="checkbox" id="select-beach" name="select-beach" checked>
+              </li>
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-norris">Видел Чака Норриса</label>
+                <input class="contest-data__input visually-hidden" type="checkbox" id="select-norris" name="select-norris">
+              </li>
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-souvenir">Накупил сувениров</label>
+                <input class="contest-data__input visually-hidden" type="checkbox" id="select-souvenir" name="select-souvenir" >
+              </li>
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-tower">Удержал башню</label>
+                <input class="contest-data__input visually-hidden" type="checkbox" id="select-tower" name="select-tower" checked>
+              </li>
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-hotel">Разгромил отель</label>
+                <input class="contest-data__input visually-hidden" type="checkbox" id="select-hotel" name="select-hotel">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="contest-data__block contest-data__block--date">
           <legend class="visually-hidden">Контактные данные</legend>
           <ul class="contest-data__list">
             <li class="contest-data__list-item">
@@ -98,29 +104,33 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="contest-data__block contest-data__block--bg-grey">
-          <legend class="contest-data__title">С каким приложением путешествовали?</legend>
-          <ul class="contest-data__list">
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-ios">Pink Для Ios</label>
-              <input class="contest-data__input visually-hidden" type="radio" id="select-ios" name="select-platform" checked>
-            </li>
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-android">Pink На Android</label>
-              <input class="contest-data__input visually-hidden" type="radio" id="select-android" name="select-platform">
-            </li>
-            <li class="contest-data__list-item">
-              <label class="contest-data__label" for="select-windows">Windows Phone</label>
-              <input class="contest-data__input visually-hidden" type="radio" id="select-windows" name="select-platform">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="contest-data__block">
+        <div class="contest-data__wrapper-grey contest-data__wrapper--app">
+          <fieldset class="contest-data__block contest-data__block--bg-grey">
+            <legend class="contest-data__title">С каким приложением путешествовали?</legend>
+            <ul class="contest-data__list">
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-ios">Pink Для Ios</label>
+                <input class="contest-data__input visually-hidden" type="radio" id="select-ios" name="select-platform" checked>
+              </li>
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-android">Pink На Android</label>
+                <input class="contest-data__input visually-hidden" type="radio" id="select-android" name="select-platform">
+              </li>
+              <li class="contest-data__list-item">
+                <label class="contest-data__label" for="select-windows">Windows Phone</label>
+                <input class="contest-data__input visually-hidden" type="radio" id="select-windows" name="select-platform">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="contest-data__block contest-data__block--textarea">
           <legend class="contest-data__title">Опишите свои эмоции</legend>
           <textarea class="contest-data__textarea" name="comments" id="write-your-emotion" cols="10" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="button button--green" type="submit">Отправить форму</button>
-        <div class="form-correction"><span class="form-correction__symbol">&#8432;</span> &nbsp; обязательные поля</div>
+        <div class="contest-data__wrapper contest-data__wrapper--submit">
+          <button class="button button--green" type="submit">Отправить форму</button>
+          <div class="form-correction"><span class="form-correction__symbol">&#8432;</span> &nbsp; обязательные поля</div>
+        </div>
       </form>
     </section>
     <div class="popup popup--error">
@@ -134,27 +144,29 @@
       <button class="popup__button button">Ok</button>
     </div>
   </main>
-  <footer class="footer">
-    <div class="footer__logo">
-      <img class="footer__image" src="http://placehold.it/150x100" alt="Логотип Пинк">
-    </div>
-    <section class="footer__social social">
-      <h3 class="visually-hidden">Мы в социальных сетях</h3>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--yt" href="#"><span class="visually-hidden">Youtube</span></a>
-        </li>
-      </ul>
-    </section>
-    <div class="footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru"><span class="visually-hidden">Html Academy</span></a>
+  <footer class="footer footer--index">
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <img class="footer__image" src="http://placehold.it/150x100" alt="Логотип Пинк">
+      </div>
+      <section class="footer__social social">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--yt" href="#"><span class="visually-hidden">Youtube</span></a>
+          </li>
+        </ul>
+      </section>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru"><span class="visually-hidden">Html Academy</span></a>
+      </div>
     </div>
   </footer>
 </body>

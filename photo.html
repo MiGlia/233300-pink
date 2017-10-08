@@ -9,155 +9,175 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
-    </a>
-    <button class="header__button-toggle" type="button">
-      Открыть меню
-    </button>
-    <nav class="navigation">
-      <ul class="navigation__list site-list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link navigation__link--current-page">Фотографии</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="htmlacademy.ru">Html Academy</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <a class="header__logo">
+        <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
+      </a>
+      <button class="header__button-toggle" type="button">
+        Открыть меню
+      </button>
+      <nav class="navigation">
+        <ul class="navigation__list site-list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current-page">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="htmlacademy.ru">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-photo">
-    <div class="photo-page__intro">
-      <h1 class="photo-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
+    <section class="page-photo__intro">
+      <div class="page-photo__wrapper">
+        <h1 class="page-photo__title">Фотографии пользователей</h1>
+      </div>
+    </section>
     <section class="photo-album">
-      <h2 class="photo-album__slogan" >Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      <div class="photo-album__wrapper">
+        <h2 class="photo-album__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      </div>
       <section class="photo-album__section user-photo">
         <h2 class="visually-hidden">Галлерея фотографий</h2>
         <article class="user-photo__item">
           <a class="user-photo__picture" href="#">
-            <img class="user-photo__image user-photo__image--photo-day" src="img\panorama-mobile@1x.jpg" alt="Фото пользователя">
+            <img class="user-photo__image user-photo__image--photo-day" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя">
           </a>
-          <blockquote class="user-photo__quote">
-            <cite class="user-photo__author">Анна<span>(5 минут назад)</span></cite>
-            <p class="user-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          </blockquote>
-          <a class="user-photo__text-like">Нравится: 215</a>
+          <div class="user-photo__wrapper-quote">
+            <blockquote class="user-photo__quote user-photo__quote--wrapper">
+              <cite class="user-photo__author">Анна<span>(5 минут назад)</span></cite>
+              <p class="user-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <a class="user-photo__text-like">Нравится: 215</a>
+            </blockquote>
+          </div>
         </article>
-        <article class="user-photo__item">
-          <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="img\photo-car-mobile@1x.jpg" alt="Фото пользователя">
-          </a>
-          <blockquote class="user-photo__quote">
-            <cite class="user-photo__author">Левон<span>(5 часов назад)</span></cite>
-            <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          </blockquote>
-          <a class="user-photo__text-like">Нравится: 356</a>
-        </article>
-        <article class="user-photo__item">
-          <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="img\photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
-          </a>
-          <blockquote class="user-photo__quote">
-            <cite class="user-photo__author">Антон<span>((12 часов назад)</span></cite>
-            <p class="user-photo__text">Соседи будут рады!</p>
-          </blockquote>
-          <a class="user-photo__text-like">Нравится: 666</a>
-        </article>
-        <article class="user-photo__item">
-          <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="img\photo-fair-mobile@1x.jpg" alt="Фото пользователя">
-          </a>
-          <blockquote class="user-photo__quote">
-            <cite class="user-photo__author">Борис<span>(20 часов назад)</span></cite>
-            <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          </blockquote>
-          <a class="user-photo__text-like">Нравится: 215</a>
-        </article>
-        <article class="user-photo__item">
-          <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="img\photo-pov-mobile@1x.jpg" alt="Фото пользователя">
-          </a>
-          <blockquote class="user-photo__quote">
-            <cite class="user-photo__author">Сергей<span>(25 часов назад)</span></cite>
-            <p class="user-photo__text">Самая кубанская в мире!</p>
-          </blockquote>
-          <a class="user-photo__text-like">Нравится: 4</a>
-        </article>
-        <article class="user-photo__item">
-          <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="img\photo-window-mobile@1x.jpg" alt="Фото пользователя">
-          </a>
-          <blockquote class="user-photo__quote">
-            <cite class="user-photo__author">Максим<span>(40 часов назад)</span></cite>
-            <p class="user-photo__text">Где снег-то?</p>
-          </blockquote>
-          <a class="user-photo__text-like">Нравится: 150</a>
-        </article>
-        <article class="user-photo__item">
-          <a class="user-photo__picture" href="#">
-            <img class="user-photo__image" src="img\photo-wing-mobile@1x.jpg" alt="Фото пользователя">
-          </a>
-          <blockquote class="user-photo__quote">
-            <cite class="user-photo__author">Надежда<span>(45 часов назад)</span></cite>
-            <p class="user-photo__text">Всем GM и взаимные лайки!</p>
-          </blockquote>
-          <a class="user-photo__text-like">Нравится: 2560</a>
-        </article>
+        <div class="user-photo__wrapper">
+          <article class="user-photo__item">
+            <a class="user-photo__picture" href="#">
+              <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя">
+            </a>
+            <blockquote class="user-photo__quote">
+              <cite class="user-photo__author">Левон<span>(5 часов назад)</span></cite>
+              <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <a class="user-photo__text-like">Нравится: 356</a>
+            </blockquote>
+          </article>
+          <article class="user-photo__item">
+            <a class="user-photo__picture" href="#">
+              <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя">
+            </a>
+            <blockquote class="user-photo__quote">
+              <cite class="user-photo__author">Антон<span>((12 часов назад)</span></cite>
+              <p class="user-photo__text">Соседи будут рады!</p>
+              <a class="user-photo__text-like">Нравится: 666</a>
+            </blockquote>
+          </article>
+          <article class="user-photo__item">
+            <a class="user-photo__picture" href="#">
+              <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя">
+            </a>
+            <blockquote class="user-photo__quote">
+              <cite class="user-photo__author">Борис<span>(20 часов назад)</span></cite>
+              <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <a class="user-photo__text-like">Нравится: 215</a>
+            </blockquote>
+          </article>
+          <article class="user-photo__item">
+            <a class="user-photo__picture" href="#">
+              <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя">
+            </a>
+            <blockquote class="user-photo__quote">
+              <cite class="user-photo__author">Сергей<span>(25 часов назад)</span></cite>
+              <p class="user-photo__text">Самая кубанская в мире!</p>
+              <a class="user-photo__text-like">Нравится: 4</a>
+            </blockquote>
+          </article>
+          <article class="user-photo__item">
+            <a class="user-photo__picture" href="#">
+              <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя">
+            </a>
+            <blockquote class="user-photo__quote">
+              <cite class="user-photo__author">Максим<span>(40 часов назад)</span></cite>
+              <p class="user-photo__text">Где снег-то?</p>
+              <a class="user-photo__text-like">Нравится: 150</a>
+            </blockquote>
+          </article>
+          <article class="user-photo__item">
+            <a class="user-photo__picture" href="#">
+              <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя">
+            </a>
+            <blockquote class="user-photo__quote">
+              <cite class="user-photo__author">Надежда<span>(45 часов назад)</span></cite>
+              <p class="user-photo__text">Всем GM и взаимные лайки!</p>
+              <a class="user-photo__text-like">Нравится: 2560</a>
+            </blockquote>
+          </article>
+        </div>
       </section>
       <form class="image-load">
-        <h3 class="image-load__title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</h3>
-        <div class="image-load__picture">
-          <img src="img\photo-road-mobile@1x.jpg" alt="Загружаемое фото">
+        <div class="image-load__title-wrapper">
+          <h3 class="image-load__title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</h3>
         </div>
         <section class="image-load__tools load-tools">
-          <ul class="load-tools__list">
-            <li class="load-tools__item">
-              <div class="load-tools__bar load-tools__bar--crop"></div>
-              <div class="load-tools__scale"></div>
-            </li>
-            <li class="load-tools__item load-tools__item--current">
-              <div class="load-tools__bar load-tools__bar--fill"></div>
-              <div class="load-tools__scale"></div>
-            </li>
-            <li class="load-tools__item">
-              <div class="load-tools__bar load-tools__bar--contrast"></div>
-              <div class="load-tools__scale"></div>
-            </li>
-          </ul>
-          <button class="button button--submit" type="submit">Запостить</button>
-          <button class="button button--reset" type="reset">Отмена</button>
+          <div class="image-load__wrapper">
+            <div class="image-load__picture">
+              <img src="img/photo-road-mobile@1x.jpg" alt="Загружаемое фото">
+            </div>
+            <div class="load-tools__wrapper">
+              <ul class="load-tools__list">
+                <li class="load-tools__item">
+                  <div class="load-tools__bar load-tools__bar--crop"></div>
+                  <div class="load-tools__scale"></div>
+                </li>
+                <li class="load-tools__item load-tools__item--current">
+                  <div class="load-tools__bar load-tools__bar--fill"></div>
+                  <div class="load-tools__scale"></div>
+                </li>
+                <li class="load-tools__item">
+                  <div class="load-tools__bar load-tools__bar--contrast"></div>
+                  <div class="load-tools__scale"></div>
+                </li>
+              </ul>
+              <div class="button__wrapper">
+                <button class="button button--submit" type="submit">Запостить</button>
+                <button class="button button--reset" type="reset">Отмена</button>
+              </div>
+            </div>
+          </div>
         </section>
       </form>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__logo">
-      <img class="footer__image" src="http://placehold.it/150x100" alt="Логотип Пинк">
-    </div>
-    <section class="footer__social social">
-      <h3 class="visually-hidden">Мы в социальных сетях</h3>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--yt" href="#"><span class="visually-hidden">outube</span></a>
-        </li>
-      </ul>
-    </section>
-    <div class="footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link button" href="https://htmlacademy.ru"><span class="visually-hidden">Html Academy</span></a>
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <img class="footer__image" src="http://placehold.it/150x100" alt="Логотип Пинк">
+      </div>
+      <section class="footer__social social">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твиттер</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--yt" href="#"><span class="visually-hidden">Youtube</span></a>
+          </li>
+        </ul>
+      </section>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru"><span class="visually-hidden">Html Academy</span></a>
+      </div>
     </div>
   </footer>
 </body>
