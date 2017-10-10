@@ -1,8 +1,7 @@
 .header {
-  // padding-top: 20px;
-  // padding-bottom: 20px;
 
   background-color: @bg--blue;
+  background-color: rgba(0, 0, 0,0.5);
 }
 
 .header__wrapper-logo {
@@ -21,25 +20,32 @@
   display: block;
   background-color: red;
   border: none;
-  top: 0;
+  top: 50%;
   right: 0;
   cursor: pointer;
+  transform: translate(-50%, -50%)
 }
 
-
+.header__logo-image {
+  display: block;
+}
 
 @media (min-width: @tablet--width) {
   .header {
     min-height: 110px;
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
+
+
 
   .header__logo-image {
     display: block;
     width: 147px;
     height: 40px;
-    padding-bottom: 25px;
+  }
+
+  .header__wrapper-logo {
+    padding-top: 27px;
+    padding-bottom: 43px;
   }
 }
 

@@ -5,7 +5,8 @@
   // min-height: 70px;
   margin: 0 auto;
 
-  background-color: @text--blue;
+  background-color: @bg--blue;
+  align-self: center;
 
 }
 
@@ -42,7 +43,7 @@
 
   @media (min-width: @desktop--width) {
     .navigation__item {
-      border-top: none;
+      border: none;
     }
 
     .navigation__list {
@@ -60,7 +61,11 @@
       line-height: @line-height--small;
       text-transform: none;
     }
+
+    .navigation {
+      background-color: transparent;
   }
+}
 
   @media (max-width: @desktop--width) {
   .navigation--closed .navigation__list {
