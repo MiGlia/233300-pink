@@ -10,13 +10,15 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
+      <div class="header__wrapper-logo">
       <a class="header__logo">
-        <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100">
+        <img class="header__logo-image" alt="Логотип Pink" src="http://placehold.it/150x100" width="75" height="22">
       </a>
       <button class="header__button-toggle" type="button">
-        Открыть меню
+        <span class="visually-hidden">Открыть меню</span>
       </button>
-      <nav class="navigation">
+    </div>
+      <nav class="navigation navigation--closed">
         <ul class="navigation__list site-list">
           <li class="navigation__item">
             <a class="navigation__link navigation__link--current-page">Главная</a>

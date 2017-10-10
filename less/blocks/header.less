@@ -1,14 +1,45 @@
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
 
   background-color: @bg--blue;
 }
 
+.header__wrapper-logo {
+  display: flex;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .wrapper();
+}
+
+.header__button-toggle {
+  position: absolute;
+  width: 24px;
+  height: 23px;
+  display: block;
+  background-color: red;
+  border: none;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+
+
 @media (min-width: @tablet--width) {
   .header {
+    min-height: 110px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .header__logo-image {
+    display: block;
+    width: 147px;
+    height: 40px;
+    padding-bottom: 25px;
   }
 }
 

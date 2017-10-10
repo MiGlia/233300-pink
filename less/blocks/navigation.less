@@ -1,8 +1,13 @@
 .navigation {
+  position: relative;
+
   width: 100%;
+  // min-height: 70px;
   margin: 0 auto;
 
   background-color: @text--blue;
+
+}
 
   .navigation__link {
     display: block;
@@ -21,9 +26,19 @@
 
     text-transform: uppercase;
 
-    border-top: 1px solid #000000;
+    border-top: 1px solid @border-ligth-grey;
+    border-bottom: 1px solid @text--black;
+    cursor: pointer;
   }
 
+  .navigation__link:hover,
+  .navigation__link:focus {
+    color: @text-pink;
+  }
+
+  .navigation__link:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @desktop--width) {
     .navigation__item {
@@ -46,4 +61,9 @@
       text-transform: none;
     }
   }
+
+  @media (max-width: @desktop--width) {
+  .navigation--closed .navigation__list {
+    display: none;
+}
 }
