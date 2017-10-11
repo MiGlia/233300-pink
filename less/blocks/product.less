@@ -3,23 +3,15 @@
   padding-bottom: 50px;
 
   text-transform: uppercase;
+  background-color: @bg--ligth-grey;
 
   .product__wrapper {
+    .wrapper();
     width: 100%;
     overflow: hidden;
 
-    background-color: @bg--ligth-grey;
-
-    @media (min-width: @tablet--width) {
-      width: @width-wrapper--tablet;
-      margin: 0 auto;
-    }
-
-    @media (min-width: @desktop--width) {
-      width: @width-wrapper--desktop;
-      margin: 0 auto;
-    }
   }
+}
 
   .product__list-head {
     color: @text--white;
@@ -146,4 +138,3 @@
       display: none;
     }
   }
-}
