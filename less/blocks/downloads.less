@@ -6,40 +6,45 @@
   .downloads__wrapper {
     width: 280px;
     margin: 0 auto;
-
-  }
-
-
-  .downloads__text {
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 35px;
-
-    font-weight: 300;
-    font-size: @font-size;
-    line-height: @line-height--base;
-    text-align: center;
-    color: @text--white;
-  }
-
-  .downloads__title {
-    display: none;
-  }
-
-  @media (min-width: @tablet--width) {
-    .downloads__title {
-      display: block;
-
-      font-weight: 300;
-      color: @text--white;
-    }
   }
 }
 
+.downloads__text {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  font-weight: 300;
+  font-size: @font-size;
+  line-height: @line-height--base;
+  text-align: center;
+  color: @text--white;
+}
+
+.downloads__title {
+  display: none;
+}
+
+@media (min-width: @tablet--width) {
+  .downloads__title {
+    display: block;
+
+    font-weight: 300;
+    color: @text--white
+  }
+
+    .downloads {
+      width: 360px;
+      padding-top: 210px;
+
+      background-color: transparent;
+    }
+  }
+
+
+
 @media (min-width: @tablet--width) {
   .downloads {
-    width: 360px;
-
-    background-color: transparent;
+    padding-top: 230px;
   }
 }
