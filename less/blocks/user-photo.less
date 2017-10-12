@@ -1,7 +1,6 @@
 .user-photo {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
 
   .user-photo__wrapper {
     .wrapper();
@@ -20,9 +19,11 @@
       padding-bottom: 80px;
     }
   }
+}
 
   .user-photo__image {
     background-color: @bg--grey;
+    display: block;
 
     &--photo-day {
       display: block;
@@ -33,7 +34,7 @@
   }
 
   .user-photo__quote {
-    padding: 40px;
+    padding: 20px;
 
     text-align: left;
 
@@ -43,14 +44,14 @@
   .user-photo__author {
     font-weight: 700;
     font-size: @font-size;
-    line-height: @line-height--base;
+    line-height: @line-height--small;
     font-style: normal;
   }
 
   .user-photo__author span {
     font-weight: 300;
     font-size: @font-size--small;
-    line-height: line-height--base;
+    line-height: @line-height--small;
     text-transform: uppercase;
     font-style: italic;
   }
@@ -60,25 +61,35 @@
 
     font-weight: 300;
     font-size: @font-size;
-    line-height: line-height--base;
+    line-height: (@line-height--base+0.15);
   }
 
   .user-photo__text-like {
     align-self: flex-start;
-    padding-left: 40px;
+    padding-left: 32px;
 
     font-weight: 400;
     font-size: @font-size--small;
-    line-height: line-height--big;
+    line-height: @line-height--big;
     color: @text-pink;
+    padding-top: 10px;
+    text-transform: uppercase;
+    display: block;
+
   }
 
   .user-photo__item {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    padding-top: 52px;
 
     // background-color: @bg--grey;
+  }
+
+  .user-photo__wrapper .user-photo__item {
+    padding-top: 0px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: @tablet--width) {
@@ -133,4 +144,3 @@
       justify-content: space-between;
     }
   }
-}
