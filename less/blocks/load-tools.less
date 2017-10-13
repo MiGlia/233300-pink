@@ -26,6 +26,7 @@
 }
 
 .load-tools__scale-box {
+  position: relative;
   box-sizing: border-box;
   width: 280px;
   padding-top: 32px;
@@ -106,7 +107,7 @@
   .load-tools__list {
     display: flex;
     flex-direction: column;
-    padding: 8px 10px 0 0;
+    padding: 50px 10px 0 0;
   }
 
   .load-tools__bar {
@@ -114,7 +115,7 @@
     padding-right: 240px;
   }
 
-// временно
+  // временно
   .load-tools_image {
     width: 22px;
     height: 22px;
@@ -124,15 +125,15 @@
     padding-left: 60px;
   }
 
-    .load-tools__item {
-      padding-bottom: 20px;
-    }
-
-    .load-tools__scale-circle {
-      height: 10px;
-      width: 10px;
-    }
+  .load-tools__item {
+    padding-bottom: 20px;
   }
+
+  .load-tools__scale-circle {
+    width: 10px;
+    height: 10px;
+  }
+}
 
 @media (min-width: @desktop--width) {
   .load-tools__bar {
@@ -140,7 +141,7 @@
     padding-right: 400px;
   }
 
-// временно
+  // временно
   .load-tools_image {
     width: 44px;
     height: 44px;
@@ -148,5 +149,30 @@
 
   .load-tools__scale-box {
     padding-left: 60px;
+  }
+
+  .load-tools__list {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
+    padding-left: 20px;
+  }
+
+  .load-tools__item {
+    padding-bottom: 0;
+  }
+
+  .load-tools__scale {
+    padding-left: 115px;
+  }
+
+  .load-tools__scale-box {
+    width: 288px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .image-load__wrapper {
+    padding-bottom: 80px;
   }
 }

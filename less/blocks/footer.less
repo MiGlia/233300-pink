@@ -13,9 +13,9 @@
   }
 
   .footer__wrapper {
-    .wrapper();
-
     padding-top: 55px;
+
+    .wrapper();
 
     @media (min-width: @tablet--width) {
       display: flex;
@@ -39,11 +39,12 @@
 }
 
 .copyright__text {
+  padding-top: 5px;
+  padding-right: 10px;
+
   font-weight: 400;
   font-size: @font-size;
   line-height: @line-height--h2;
-  padding-top: 5px;
-  padding-right: 10px;
 }
 
 .social__list {
@@ -76,6 +77,7 @@
     background-image: url("../img/icon-youtube.svg");
   }
 }
+
 @media (min-width: @tablet--width) {
   .footer__logo {
     padding-bottom: 0;
@@ -83,6 +85,7 @@
 
   .social__list {
     padding-bottom: 0;
+    padding-left: 60px;
   }
 
   .footer__copyright {
@@ -92,10 +95,6 @@
   .copyright__text {
     padding-top: 10px;
   }
-}
-
-.social__list {
-  padding-left: 60px;
 
   .footer {
     padding-top: 5px;
