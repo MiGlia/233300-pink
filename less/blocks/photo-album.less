@@ -4,23 +4,36 @@
     .wrapper();
   }
 
-  .photo-album__slogan {
-    margin: 0;
-
-    font-weight: 400;
-    font-size: @font-size;
-    line-height: @line-height--big;
-    padding-top: 45px;
-
     @media (min-width: @tablet--width) {
       font-weight: 400;
       font-size: @font-size--bigger;
       line-height: @line-height--base;
     }
+}
 
-    @media (min-width: @desktop--width) {
-      padding-right: 187px;
-      padding-left: 187px;
-    }
+.photo-album__slogan {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: @font-size;
+  line-height: @line-height--big;
+  padding-top: 45px;
+}
+
+@media (min-width: @tablet--width) {
+  .photo-album__slogan {
+    padding-top: 92px;
+    padding-bottom: 26px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: @font-size--bigger;
+    line-height: @line-height--base;
+  }
+}
+
+@media (min-width: @desktop--width) {
+  .photo-album__slogan {
+    padding-left: 180px;
+    padding-right: 180px;
   }
 }
