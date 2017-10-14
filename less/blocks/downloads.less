@@ -1,5 +1,5 @@
 .downloads {
-  padding-top: 48px;
+  padding-top: 27px;
 
   background-color: @bg--blue;
 
@@ -11,7 +11,6 @@
 
 .downloads__text {
   margin: 0;
-  padding-top: 30px;
   padding-bottom: 35px;
 
   font-weight: 300;
@@ -30,21 +29,42 @@
     display: block;
 
     font-weight: 300;
-    color: @text--white
+    color: @text--white;
   }
 
-    .downloads {
-      width: 360px;
-      padding-top: 210px;
-
-      background-color: transparent;
-    }
-  }
-
-
-
-@media (min-width: @tablet--width) {
   .downloads {
-    padding-top: 230px;
+    width: 360px;
+    // padding-top: 210px;
+
+    background-color: transparent;
+  }
+
+  .downloads__title {
+    margin: 0;
+    padding-right: 36px;
+    padding-bottom: 30px;
+    padding-left: 36px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .downloads__wrapper {
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop--width) {
+  .downloads__title {
+    padding-right: 10px;
+    padding-bottom: 50px;
+    padding-left: 0;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .downloads {
+    padding-top: 10px;
   }
 }

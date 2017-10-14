@@ -1,8 +1,8 @@
 .features {
   display: flex;
   flex-direction: column;
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding-top: 12px;
+  padding-bottom: 35px;
 
   .features__wrapper,
   .features__wrapper-list {
@@ -20,7 +20,7 @@
 .features__item {
   position: relative;
 
-  padding-bottom: 30px;
+  padding-bottom: 13px;
 
   list-style: none;
   color: @text--black;
@@ -37,12 +37,13 @@
 .features__list {
   display: flex;
   flex-direction: column;
-  padding-top: 119px;
+  flex-wrap: wrap;
+  padding-top: 85px;
 }
 
 .features__title-item {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 
   font-weight: 700;
   font-size: @font-size--h3;
@@ -53,7 +54,7 @@
   padding-bottom: 20px;
 
   font-weight: 400;
-  line-height: @line-height--h2;
+  line-height: @line-height--base;
   color: @text--blue;
 }
 
@@ -64,6 +65,12 @@
     padding: 0;
 
     font-size: 40px;
+    line-height: @line-height--h1;
+  }
+
+  .features {
+    padding-top: 48px;
+    padding-bottom: 65px;
   }
 
   .features__item--img {
@@ -79,7 +86,7 @@
   .features__wrapper-list::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
 
     width: 268px;
@@ -95,6 +102,7 @@
   }
 
   .features__item {
+    padding-bottom: 15px;
     padding-left: 300px;
 
     text-align: left;
@@ -112,7 +120,8 @@
   }
 
   .features__list {
-    padding-top: 126px;
+    padding-top: 120px;
+    padding-left: 10px;
   }
 }
 
@@ -128,15 +137,26 @@
     display: none;
   }
 
+  .features {
+    padding-top: 68px;
+  }
+
   .features__title-item {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 55px;
+    padding-right: 10px;
+    padding-bottom: 30px;
 
     font-weight: 700;
     font-size: 30px;
     line-height: @line-height--small;
     color: @text--black;
   }
+
+  .features__title-item:last-child {
+    padding-right: 0;
+  }
+
+
 
   .features__item {
     position: relative;
@@ -183,6 +203,7 @@
 
     font-weight: 400;
     font-size: @font-size--bigger;
+    line-height: @line-height--base;
     color: @text--blue;
   }
 

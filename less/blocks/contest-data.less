@@ -9,7 +9,8 @@
 .contest-data__intro {
   width: 280px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 48px;
+  padding-bottom: 18px;
 
   font-weight: 400;
   font-size: @font-size;
@@ -34,12 +35,13 @@
   border: none;
 }
 
-// ======================временн===========
+// ======================временно===========
 .form-correction {
   padding-top: 40px;
 
   text-transform: uppercase;
 }
+// ============================
 
 .contest-data__textarea {
   box-sizing: border-box;
@@ -57,6 +59,7 @@
 .contest-data__list-item {
   display: flex;
   flex-direction: column;
+  padding-bottom: 17px;
 
   color: @text--blue;
 }
@@ -74,8 +77,7 @@
 }
 
 .contest-data__label-info {
-  padding-top: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   padding-left: 20px;
 
   font-weight: 400;
@@ -97,13 +99,15 @@
 
 .contest-data__list {
   padding-top: 15px;
-  padding-bottom: 44px;
+  padding-bottom: 25px;
 }
 
-.contest-data__wrapper--app .contest-data__label {
+.contest-data__wrapper--app .contest-data__list-item {
   padding-top: 25px;
   padding-bottom: 22px;
+  padding-left: 50px;
 }
+
 
 .contest-data__list--achievements .contest-data__list-item {
   padding-top: 5px;
@@ -144,6 +148,23 @@
   padding-top: 35px;
 }
 
+.contest-data__block--date {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.contest-data__textarea {
+  margin-top: 20px;
+
+  font-size: @font-size--bigger;
+  line-height: @line-height--base;
+}
+
+.contest-data__wrapper--submit {
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+
 @media (min-width: @tablet--width) {
   .contest-data__block {
     width: 620px;
@@ -171,8 +192,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    padding-bottom: 0;
     padding-left: 50px;
   }
+
+  .contest-data__list-item {
+    padding-left: 0;
+  }
+
 
   .contest-data__input {
     flex-grow: 1;
@@ -200,7 +227,7 @@
 
   .contest-data__block--date {
     order: 2;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 
   .contest-data__wrapper--app .contest-data__label {
@@ -258,15 +285,13 @@
 
   .contest-data__list {
     margin-bottom: 0;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 0;
+    padding: 0;
   }
 
   .contest-data__wrapper--app .contest-data__list-item {
     margin-bottom: 0;
     padding-top: 48px;
+    padding-bottom: 0;
   }
 
   .contest-data__wrapper--app .contest-data__block {
@@ -280,16 +305,6 @@
     padding-left: 30px;
   }
 
-  .contest-data__label {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .contest-data__list-item {
-    padding-left: 0;
-  }
-
-
   .contest-data__block--date .contest-data__list-item {
     flex-direction: column-reverse;
     margin-bottom: 30px;
@@ -297,7 +312,7 @@
   }
 
   .contest-data__block--date .contest-data__list {
-    padding-top: 35px;
+    padding-top: 30px;
     padding-left: 60px;
   }
 
@@ -344,7 +359,7 @@
 @media (min-width: @desktop--width) {
   .contest-data__intro {
     width: 940px;
-    padding-bottom: 42px;
+    padding-bottom: 72px;
   }
 
   .contest-data__form {
@@ -360,6 +375,7 @@
     box-sizing: border-box;
     width: 100%;
     margin: 0;
+    padding-bottom: 10px;
   }
 
   .contest-data__block--personal {
@@ -368,12 +384,18 @@
   }
 
   .contest-data__wrapper--app {
+    box-sizing: border-box;
     width: 50%;
+    padding-left: 35px;
+  }
+
+  .contest-data__wrapper--app .contest-data__list-item {
+    padding-left: 62px;
   }
 
   .contest-data__block--date {
     width: 100%;
-    margin-bottom: 44px;
+    margin-bottom: 62px;
     padding-left: 50px;
   }
 
@@ -382,7 +404,8 @@
   }
 
   .contest-data__wrapper-grey--achievements .contest-data__block {
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 5px;
   }
 
   .contest-data__list--achievements {
@@ -390,6 +413,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 40px;
   }
 
   .contest-data__block--personal {
@@ -400,21 +424,18 @@
     padding-top: 2px;
   }
 
-  .contest-data__wrapper--app {
-    box-sizing: border-box;
-    padding-left: 35px;
-  }
-
   .contest-data__block--date .contest-data__list {
     padding-left: 10px;
   }
 
   .contest-data__block--date .contest-data__list {
     display: flex;
+    padding-top: 25px;
   }
 
   .contest-data__block--date .contest-data__list-item {
     flex-grow: 0.5;
+    margin-bottom: 0;
   }
 
   .contest-data__textarea {
@@ -424,6 +445,7 @@
   }
 
   .contest-data__wrapper--submit {
+    padding-top: 90px;
     padding-bottom: 30px;
   }
 
@@ -433,5 +455,10 @@
 }
 
 .contest-data__wrapper-grey--achievements .contest-data__list-item {
-  flex-basis: 270px;
+  flex-basis: 240px;
+  padding-left: 50px;
+}
+
+.contest-data__intro span {
+  display: inline-block;
 }

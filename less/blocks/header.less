@@ -17,8 +17,9 @@
 
 
 .header__wrapper-logo {
-  display: flex;
   position: relative;
+
+  display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -27,23 +28,19 @@
 
 .header__button-toggle {
   position: absolute;
-  width: 24px;
-  height: 23px;
+  top: 50%;
+  right: -185px;
+
   display: block;
+  width: 200px;
+  height: 23px;
+  padding-left: 15px;
+
   background-color: transparent;
   border: none;
-  top: 50%;
-  right: 0;
-  cursor: pointer;
   transform: translate(-50%, -50%);
-  padding-left: 15px;
+  cursor: pointer;
 }
-
-// .header__button-toggle:hover,
-// .header__button-toggle:focus {
-//   fill: @text-pink;
-// }
-
 
 .header__logo-image {
   display: block;
@@ -73,10 +70,8 @@
 
   .header__wrapper {
     display: flex;
-    min-height: 110px;
-    padding-right: 10px;
-    padding-left: 10px;
     width: 940px;
+    min-height: 110px;
     margin: 0 auto;
   }
 }
