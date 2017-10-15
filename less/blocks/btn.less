@@ -7,13 +7,12 @@
   text-align: center;
 
   &--downloads {
-    padding: 20px 40px 20px 40px;
+    padding: 17px 36px 17px 36px;
 
     font-weight: 700;
     font-size: @font-size--bigger;
     line-height: @line-height--small;
     color: @text--white;
-    text-transform: uppercase;
     text-decoration: none;
 
     border: 3px solid @text--white;
@@ -21,9 +20,10 @@
   }
 
   &--green {
+    width: 276px;
     margin-right: auto;
     margin-left: auto;
-    padding: 20px;
+    padding: 17px;
 
     color: @text--white;
     text-transform: uppercase;
@@ -65,5 +65,11 @@
     border: 3px solid @text--blue;
     border-radius: 30px;
     opacity: 0.1;
+  }
+}
+
+@media (min-width: @tablet--width) {
+  .button--green {
+    width: 296px;
   }
 }

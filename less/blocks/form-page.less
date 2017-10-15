@@ -1,46 +1,55 @@
 .form-page {
   background-color: @bg--white;
 
-  .form-page__intro {
-    background-color: @bg--blue;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+  .form-page__wrapper {
+    .wrapper();
   }
+}
 
+.form-page__intro {
+  background-color: @bg--blue;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.form-page__title {
+  margin: 0;
+  padding-top: 90px;
+  padding-bottom: 50px;
+
+  font-weight: 300;
+  font-size: @font-size--h1;
+  line-height: @line-height--h2;
+  color: @text--white;
+}
+
+.form-page__wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: @tablet--width) {
   .form-page__title {
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 40px;
-
     font-weight: 300;
-    font-size: @font-size--h1;
-    color: @text--white;
+    font-size: 50px;
+    line-height: @line-height--h1;
   }
 
   .form-page__wrapper {
-    .wrapper();
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
 
-    @media (min-width: @tablet--width) {
-      width: @width-wrapper--tablet;
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-
-    @media (min-width: @desktop--width) {
-      width: @width-wrapper--desktop;
-      padding-top: 70px;
-      padding-bottom: 70px;
-    }
+@media (min-width: @desktop--width) {
+  .form-page__title {
+    padding-top: 105px;
+    padding-bottom: 35px;
   }
 
-
-  @media (min-width: @tablet--width) {
-    .form-page__title {
-      font-weight: 300;
-      font-size: 50px;
-      line-height: @line-height--h1;
-    }
+  .form-page__wrapper {
+    padding-bottom: 65px;
   }
 }

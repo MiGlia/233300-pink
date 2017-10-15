@@ -1,12 +1,12 @@
 .proof {
   display: none;
+  padding-bottom: 55px;
 
   font-size: @font-size;
   line-height: @line-height--base;
   text-align: left;
 
   background: @bg--white;
-  background-color: @bg--grey;
 
   .proof__wrapper {
     .wrapper();
@@ -21,9 +21,8 @@
   .proof__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 55px 0 50px;
+    // padding-bottom: 65px;
   }
 
   .proof__timer {
@@ -36,16 +35,16 @@
   .proof__timer::before {
     content: "24";
     position: absolute;
-    top: 64px;
-    left: 24px;
+    top: 67px;
+    left: 25px;
     z-index: 100;
 
-    width: 192px;
-    height: 192px;
+    width: 175px;
+    height: 175px;
 
     font-weight: 700;
-    font-size: 104.6px;
-    line-height: 192px;
+    font-size: 96px;
+    line-height: 150px;
     font-family: @font-family--base;
     text-align: center;
     color: @text-pink;
@@ -57,9 +56,15 @@
 
   .proof__content {
     width: 300px;
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 70px;
   }
 
   .proof__title {
+    margin: 0;
+    padding-bottom: 10px;
+
     font-weight: 700;
     font-size: 30px;
     line-height: @line-height--h1;
@@ -70,10 +75,51 @@
     color: @text-pink;
     text-decoration: underline;
   }
+
+  .proof__text {
+    margin: 0;
+    padding-bottom: 15px;
+
+    font-size: @font-size;
+    line-height: 1.7;
+  }
 }
 
 @media (min-width: @desktop--width) {
-  font-size: @font-size--big;
+  .proof {
+    padding-bottom: 10px;
 
-  background-color: @bg--grey;
+    font-size: @font-size--big;
+
+    background-color: @bg--grey;
+  }
+
+  .proof__content {
+    width: 525px;
+    margin-top: 60px;
+    padding-bottom: 100px;
+    padding-left: 138px;
+
+    font-weight: 400;
+    font-size: @font-size--bigger;
+  }
+
+  .proof__timer::before {
+    top: 5px;
+    left: 38px;
+
+    width: 220px;
+    height: 220px;
+
+    font-size: 120px;
+    line-height: 186px;
+  }
+
+  .proof__text {
+    padding-top: 15px;
+    padding-bottom: 35px;
+
+    font-size: @font-size--bigger;
+    line-height: @line-height--base;
+  }
 }

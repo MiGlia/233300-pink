@@ -1,49 +1,77 @@
 .navigation {
+  position: relative;
+
+  align-self: center;
   width: 100%;
+  // min-height: 70px;
   margin: 0 auto;
 
-  background-color: @text--blue;
+  background-color: @bg--blue;
+}
+
+.navigation__link {
+  display: block;
+
+  font-weight: 700;
+  font-size: @font-size--bigger;
+  line-height: @line-height--base;
+  color: @text--white;
+  text-decoration: none;
+}
+
+.navigation__item {
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  text-transform: uppercase;
+
+  border-top: 1px solid @border-ligth-grey;
+  border-bottom: 1px solid @text--black;
+  cursor: pointer;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: @text-pink;
+}
+
+.navigation__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @desktop--width) {
+  .navigation__item {
+    border: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 750px;
+  }
 
   .navigation__link {
-    display: block;
+    padding-left: 82px;
 
-    font-weight: 700;
-    font-size: @font-size--bigger;
-    line-height: @line-height--base;
-    color: @text--white;
-    text-decoration: none;
+    font-weight: 400;
+    line-height: @line-height--small;
+    text-transform: none;
   }
 
-  .navigation__item {
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .navigation {
+    background-color: transparent;
+  }
+}
 
-    text-transform: uppercase;
-
-    border-top: 1px solid #000000;
+@media (max-width: @desktop--width) {
+  .navigation--closed .navigation__list {
+    display: none;
   }
 
-
-  @media (min-width: @desktop--width) {
-    .navigation__item {
-      border-top: none;
-    }
-
-    .navigation__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-items: center;
-      min-width: 750px;
-    }
-
-    .navigation__link {
-      padding-left: 82px;
-
-      font-weight: 400;
-      line-height: @line-height--small;
-      text-transform: none;
-    }
-  }
+  // .navigation--nojs .navigation__list {
+  //   display: block;
+  // }
 }

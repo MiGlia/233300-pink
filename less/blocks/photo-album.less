@@ -1,26 +1,40 @@
 .photo-album {
-  padding-top: 50px;
-
   .photo-album__wrapper {
     .wrapper();
   }
 
-  .photo-album__slogan {
-    margin: 0;
-
+  @media (min-width: @tablet--width) {
     font-weight: 400;
-    font-size: @font-size;
-    line-height: @line-height--big;
+    font-size: @font-size--bigger;
+    line-height: @line-height--base;
+  }
+}
 
-    @media (min-width: @tablet--width) {
-      font-weight: 400;
-      font-size: @font-size--bigger;
-      line-height: @line-height--base;
-    }
+.photo-album__slogan {
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 45px;
 
-    @media (min-width: @desktop--width) {
-      padding-right: 187px;
-      padding-left: 187px;
-    }
+  font-weight: 400;
+  font-size: @font-size;
+  line-height: @line-height--big;
+}
+
+@media (min-width: @tablet--width) {
+  .photo-album__slogan {
+    padding-top: 92px;
+    padding-right: 50px;
+    padding-bottom: 26px;
+    padding-left: 50px;
+
+    font-size: @font-size--bigger;
+    line-height: @line-height--base;
+  }
+}
+
+@media (min-width: @desktop--width) {
+  .photo-album__slogan {
+    padding-right: 180px;
+    padding-left: 180px;
   }
 }
