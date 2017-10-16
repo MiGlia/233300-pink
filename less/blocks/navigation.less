@@ -1,5 +1,5 @@
 .navigation {
-  position: relative;
+  // position: relative;
 
   align-self: center;
   width: 100%;
@@ -7,6 +7,15 @@
   margin: 0 auto;
 
   background-color: @bg--blue;
+  position: absolute;
+    content: "";
+    z-index: 100;
+    top: 0;
+}
+
+.navigation__item--height {
+  min-height: 28px;
+
 }
 
 .navigation__link {
