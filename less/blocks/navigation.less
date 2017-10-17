@@ -9,7 +9,7 @@
   background-color: @bg--blue;
   position: absolute;
     content: "";
-    z-index: 100;
+    z-index: 5;
     top: 0;
 }
 
@@ -49,6 +49,12 @@
   opacity: 0.3;
 }
 
+@media (min-width: @tablet--width) {
+  .navigation__item--height {
+    min-height: 76px;
+  }
+}
+
 @media (min-width: @desktop--width) {
   .navigation__item {
     border: none;
@@ -72,7 +78,9 @@
 
   .navigation {
     background-color: transparent;
+    position: relative;
   }
+
 }
 
 @media (max-width: @desktop--width) {
