@@ -151,6 +151,11 @@
     <section class="review slider">
       <div class="review__wrapper">
         <h2 class="visually-hidden">Отзывы</h2>
+
+          <input type="radio" id="btn-left" name="toggle" class="visually-hidden" checked>
+          <input type="radio" id="btn-middle" name="toggle" class="visually-hidden">
+          <input type="radio" id="btn-right" name="toggle" class="visually-hidden">
+        <!-- </div> -->
         <ul class="review__list">
           <li class="review__item review__item--current">
             <blockquote class="review__quote">
@@ -174,28 +179,35 @@
             </blockquote>
           </li>
         </ul>
-        <div class="slider-toggles slider-toggles--review">
-          <button type="button" class="slider-toggles__control slider-toggles__control--current">1</button>
-          <button type="button" class="slider-toggles__control">2</button>
-          <button type="button" class="slider-toggles__control">3</button>
+        <div class="slider-toggles review__toggle">
+          <label class="slider-toggles__control" for="btn-left"></label>
+          <label class="slider-toggles__control" for="btn-middle"></label>
+          <label class="slider-toggles__control" for="btn-right"></label>
         </div>
+
+
+
       </div>
     </section>
     <section class="product slider">
       <div class="product__wrapper">
 
         <h2 class="visually-hidden">Тарифы</h2>
+
+        <input type="radio" id="btn-table-left" name="toggle-price" class="visually-hidden">
+        <input type="radio" id="btn-table-middle" name="toggle-price" class="visually-hidden" checked>
+        <input type="radio" id="btn-table-right" name="toggle-price" class="visually-hidden">
         <table class="product__list">
           <thead class="product__list-head">
             <tr>
               <th class="product__name product__name--empty"></th>
               <th class="product__name">
                 <span class="product__name-title">База</span>
-                <p class="product__cost">3,99 Usd</p>
+                <p class="product__cost">1,99 Usd</p>
               </th>
               <th class="product__name">
                 <span class="product__name-title">Стандарт</span>
-                <p class="product__cost">1,99 Usd</p>
+                <p class="product__cost">3,99 Usd</p>
               </th>
               <th class="product__name">
                 <span class="product__name-title">Анлим</span>
@@ -248,12 +260,17 @@
             </tr>
           </tbody>
         </table>
+        <div class="slider-toggles slider-toggles--none product__toggle">
+          <label class="slider-toggles__control" for="btn-table-left"></label>
+          <label class="slider-toggles__control" for="btn-table-middle"></label>
+          <label class="slider-toggles__control" for="btn-table-right"></label>
+        </div>
 
-        <div class="slider-toggles slider-toggles--price">
+        <!-- <div class="slider-toggles slider-toggles--price">
           <button type="button" class="slider-toggles__control slider-toggles__control--current">1</button>
           <button type="button" class="slider-toggles__control">2</button>
           <button type="button" class="slider-toggles__control">3</button>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="contact">

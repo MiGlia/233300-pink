@@ -1,8 +1,37 @@
 .slider-toggles {
   margin-right: auto;
   margin-left: auto;
+}
 
-  &--price {
-    padding-top: 40px;
-  }
+.slider-toggles__control {
+  content: "";
+  position: relative;
+
+  display: flex;
+  align-self: center;
+  width: 6px;
+  height: 6px;
+  margin-right: 16px;
+
+  background-color: @bg--blue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-toggles {
+  position: absolute;
+  bottom: 6px;
+  left: 54%;
+
+  display: flex;
+  width: 80px;
+  min-height: 20px;
+
+  transform: translateX(-50%);
+}
+
+@media(min-width:@tablet--width) {
+.slider-toggles--none {
+  display: none;
+}
 }
