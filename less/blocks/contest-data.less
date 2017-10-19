@@ -62,9 +62,6 @@
 
 // =========================================
 
-.contest-data__label {
-  position: relative;
-}
 .contest-data__label--radio::before {
   position: absolute;
   content: "";
@@ -74,45 +71,43 @@
   height: 35px;
 
   background-color: @bg--white;
-  border: 2px solid @border-ligth-grey;
+  border: 2px solid @border-white-grey;
   border-radius: 50%;
   left: -50px;
   top: 50%;
-  transform: translatey(-50%);
+  transform: translateY(-50%);
 }
 
 .contest-data__input:checked ~ .contest-data__label--radio::after {
-    position: absolute;
-    content: "";
-    background-color: @text-pink;
-    border-radius: 50%;
-    width: 17px;
-    height: 18px;
-    left: -39px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  position: absolute;
+  content: "";
+  background-color: @text-pink;
+  border-radius: 50%;
+  width: 17px;
+  height: 18px;
+  left: -39px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
   .contest-data__label--checkbox::before {
-    position: absolute;
-    content: "";
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
 
-
-    width: 35px;
-    height: 35px;
-
-    background-color: @bg--white;
-    border: 2px solid @border-ligth-grey;
-    left: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+  background-color: @bg--white;
+  border: 2px solid @border-white-grey;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
   .contest-data__label-image {
-    display: none;
-  }
+  display: none;
+}
 
-.contest-data__input:checked  ~ .contest-data__label-image {
+.contest-data__input:checked ~ .contest-data__label-image {
   position: absolute;
   display: block;
   top: 50%;
@@ -191,6 +186,7 @@
 }
 
 .contest-data__label {
+  position: relative;
   align-self: flex-start;
   padding-left: 20px;
 
