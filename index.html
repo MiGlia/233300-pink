@@ -62,8 +62,6 @@
               </g>
             </g>
           </svg>
-
-
         </a>
         <button class="header__button-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -151,10 +149,9 @@
     <section class="review slider">
       <div class="review__wrapper">
         <h2 class="visually-hidden">Отзывы</h2>
-
-        <input type="radio" id="btn-left" name="toggle" class="visually-hidden" checked>
-        <input type="radio" id="btn-middle" name="toggle" class="visually-hidden">
-        <input type="radio" id="btn-right" name="toggle" class="visually-hidden">
+        <input type="radio" id="btn-left" name="toggle" class="visually-hidden review__radio-left" checked>
+        <input type="radio" id="btn-middle" name="toggle" class="visually-hidden review__radio-middle">
+        <input type="radio" id="btn-right" name="toggle" class="visually-hidden review__radio-right">
         <!-- </div> -->
         <ul class="review__list">
           <li class="review__item review__item--current">
@@ -180,23 +177,18 @@
           </li>
         </ul>
         <div class="slider-toggles review__toggle">
-          <label class="slider-toggles__control" for="btn-left"></label>
-          <label class="slider-toggles__control" for="btn-middle"></label>
-          <label class="slider-toggles__control" for="btn-right"></label>
+          <label class="slider-toggles__control slider-toggles__review-left" for="btn-left"></label>
+          <label class="slider-toggles__control slider-toggles__review-middle" for="btn-middle"></label>
+          <label class="slider-toggles__control slider-toggles__review-right" for="btn-right"></label>
         </div>
-
-
-
       </div>
     </section>
     <section class="product slider">
       <div class="product__wrapper">
-
         <h2 class="visually-hidden">Тарифы</h2>
-
-        <input type="radio" id="btn-table-left" name="toggle-price" class="visually-hidden">
-        <input type="radio" id="btn-table-middle" name="toggle-price" class="visually-hidden" checked>
-        <input type="radio" id="btn-table-right" name="toggle-price" class="visually-hidden">
+        <input type="radio" id="btn-table-left" name="toggle-price" class="visually-hidden product__radio-left">
+        <input type="radio" id="btn-table-middle" name="toggle-price" class="visually-hidden product__radio-middle" checked>
+        <input type="radio" id="btn-table-right" name="toggle-price" class="visually-hidden product__radio-right">
         <table class="product__list">
           <thead class="product__list-head">
             <tr>
@@ -261,9 +253,9 @@
           </tbody>
         </table>
         <div class="slider-toggles slider-toggles--none product__toggle">
-          <label class="slider-toggles__control" for="btn-table-left"></label>
-          <label class="slider-toggles__control" for="btn-table-middle"></label>
-          <label class="slider-toggles__control" for="btn-table-right"></label>
+          <label class="slider-toggles__control slider-toggles__control-left" for="btn-table-left"></label>
+          <label class="slider-toggles__control slider-toggles__control-middle" for="btn-table-middle"></label>
+          <label class="slider-toggles__control .slider-toggles__control-right" for="btn-table-right"></label>
         </div>
       </div>
     </section>

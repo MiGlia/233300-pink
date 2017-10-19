@@ -47,25 +47,24 @@
   display: none;
 }
 
-#btn-left:checked ~ .slider-toggles label[for="btn-left"],
-#btn-middle:checked ~ .slider-toggles label[for="btn-middle"],
-#btn-right:checked ~ .slider-toggles label[for="btn-right"] {
+.review__radio-left:checked ~ .slider-toggles .slider-toggles__review-left,
+.review__radio-middle:checked ~ .slider-toggles .slider-toggles__review-middle,
+.review__radio-right:checked ~ .slider-toggles .slider-toggles__review-right {
   background-color: @bg--white;
   border: 3px solid @bg--blue;
 }
 
-#btn-left:checked ~ .review__list .review__item:first-child {
+.review__radio-left:checked ~ .review__list .review__item:first-child {
   display: block;
 }
 
-#btn-middle:checked ~ .review__list .review__item:nth-child(2) {
+.review__radio-middle:checked ~ .review__list .review__item:nth-child(2) {
   display: block;
 }
 
-#btn-right:checked ~ .review__list .review__item:nth-child(3) {
+.review__radio-right:checked ~ .review__list .review__item:nth-child(3) {
   display: block;
 }
-
 
 .review__toggle {
   bottom: 6px;
