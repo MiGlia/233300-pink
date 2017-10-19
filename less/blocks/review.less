@@ -43,13 +43,13 @@
 }
 
 .review__item {
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
   display: none;
 }
 
-#btn-left:checked ~.slider-toggles label[for="btn-left"],
-#btn-middle:checked ~.slider-toggles label[for="btn-middle"],
-#btn-right:checked ~.slider-toggles label[for="btn-right"] {
+#btn-left:checked ~ .slider-toggles label[for="btn-left"],
+#btn-middle:checked ~ .slider-toggles label[for="btn-middle"],
+#btn-right:checked ~ .slider-toggles label[for="btn-right"] {
   background-color: @bg--white;
   border: 3px solid @bg--blue;
 }

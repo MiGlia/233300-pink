@@ -1,35 +1,32 @@
 .navigation {
-  // position: relative;
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 5;
 
   align-self: center;
   width: 100%;
-  // min-height: 70px;
   margin: 0 auto;
 
   background-color: @bg--blue;
-  position: absolute;
-    content: "";
-    z-index: 5;
-    top: 0;
 }
 
 .navigation__item--height {
   min-height: 28px;
   padding-top: 17px;
   padding-bottom: 17px;
-
 }
 
 .navigation__link {
   display: block;
+  padding-top: 17px;
+  padding-bottom: 17px;
 
   font-weight: 700;
   font-size: @font-size--bigger;
   line-height: @line-height--base;
   color: @text--white;
   text-decoration: none;
-  padding-top: 17px;
-  padding-bottom: 17px;
 }
 
 .navigation__item {
@@ -79,10 +76,10 @@
   }
 
   .navigation {
-    background-color: transparent;
     position: relative;
-  }
 
+    background-color: transparent;
+  }
 }
 
 @media (max-width: @desktop--width) {

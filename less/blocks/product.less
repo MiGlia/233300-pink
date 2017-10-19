@@ -34,14 +34,14 @@
 }
 
 .product__item--yes {
-  background-image: url(../img/icon-yes.svg);
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: 230px;
   background-size: 10%;
 }
 
 .product__item--no {
-  background-image: url(../img/icon-no.svg);
+  background-image: url("../img/icon-no.svg");
   background-repeat: no-repeat;
   background-position: 230px;
 }
@@ -90,7 +90,7 @@
 
   border-collapse: collapse;
 
-  transform: translateX(0px);
+  transform: translateX(0);
   transition: .6s;
 }
 
@@ -105,26 +105,26 @@
 }
 
 .product__toggle {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
-#btn-table-left:checked ~.slider-toggles label[for="btn-table-left"],
-#btn-table-middle:checked ~.slider-toggles label[for="btn-table-middle"],
-#btn-table-right:checked ~.slider-toggles label[for="btn-table-right"] {
+#btn-table-left:checked ~ .slider-toggles label[for="btn-table-left"],
+#btn-table-middle:checked ~ .slider-toggles label[for="btn-table-middle"],
+#btn-table-right:checked ~ .slider-toggles label[for="btn-table-right"] {
   background-color: @bg--white;
   border: 3px solid @bg--blue;
 }
 
 #btn-table-left:checked ~ .product__list {
-      transform: translateX(280px)
+  transform: translateX(280px);
 }
 
 #btn-table-middle:checked ~ .product__list {
-  transform: translateX(0px)
+  transform: translateX(0px);
 }
 
 #btn-table-right:checked ~ .product__list {
-      transform: translateX(-280px)
+  transform: translateX(-280px);
 }
 
 
