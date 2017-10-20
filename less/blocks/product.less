@@ -9,6 +9,11 @@
   .product__wrapper {
     width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 65px;
 
     @media (min-width: @tablet--width) {
       width: @width-wrapper--tablet;
@@ -27,6 +32,20 @@
 
   background-color: @bg--blue;
 }
+
+.product__item--yes {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 230px;
+  background-size: 10%;
+}
+
+.product__item--no {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 230px;
+}
+
 
 .product__name-title {
   margin: 0;
@@ -71,7 +90,8 @@
 
   border-collapse: collapse;
 
-  transform: translateX(-265px);
+  transform: translateX(0);
+  transition: 0.6s;
 }
 
 .product__name--empty {
@@ -83,6 +103,30 @@
 
   background: none;
 }
+
+.product__toggle {
+  padding-top: 40px;
+}
+
+.product__radio-left:checked ~ .slider-toggles .slider-toggles__control-left,
+.product__radio-middle:checked ~ .slider-toggles .slider-toggles__control-middle,
+.product__radio-right:checked ~ .slider-toggles .slider-toggles__control-right {
+  background-color: @bg--white;
+  border: 3px solid @bg--blue;
+}
+
+.product__radio-left:checked ~ .product__list {
+  transform: translateX(280px);
+}
+
+.product__radio-middle:checked ~ .product__list {
+  transform: translateX(0);
+}
+
+.product__radio-right:checked ~ .product__list {
+  transform: translateX(-280px);
+}
+
 
 @media (min-width: @tablet--width) {
   .product__item--empty {
@@ -97,16 +141,22 @@
     transform: none;
   }
 
-  .slider-toggles--price {
-    display: none;
-  }
-
   .product__name--empty {
     display: block;
     min-height: 78px;
 
     background-color: @bg--ligth-grey;
     border: none;
+  }
+
+  .product__item--yes {
+    background-position: center;
+    background-size: 15%;
+  }
+
+  .product__item--no {
+    background-position: center;
+    background-size: 10%;
   }
 
   .product {
@@ -177,12 +227,8 @@
     text-transform: uppercase;
   }
 
-  .slider-toggles--price {
-    display: none;
-  }
-
   .product {
-    padding-top: 150px;
-    padding-bottom: 95px;
+    padding-top: 140px;
+    padding-bottom: 10px;
   }
 }
