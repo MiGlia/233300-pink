@@ -41,6 +41,34 @@
   cursor: pointer;
 }
 
+
+.header__button-toggle--closed .header__button-cross {
+  display: none;
+}
+
+.header__button-toggle .header__button-burger {
+  display: none;
+}
+
+.header__button-toggle--closed .header__button-burger {
+  display: block;
+}
+
+.header__button-cross:hover,
+.header__button-cross:focus,
+.header__button-burger:hover,
+.header__button-burger:focus {
+  fill: @text-pink;
+}
+
+
+.header__button-cross:active,
+.header__button-burger:active {
+  opacity: 0.3
+}
+
+
+
 .header__logo-image {
   display: block;
 }
@@ -49,6 +77,24 @@
 .header__logo-desktop {
   display: none;
 }
+
+.header__logo {
+  fill: @bg--white;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  fill: @text-pink;
+}
+
+.header__logo:active {
+  fill: @bg--white;
+  opacity: 0.3;
+}
+
+
+
+
 
 
 @media (min-width: @tablet--width) {
