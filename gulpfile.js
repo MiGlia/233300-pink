@@ -34,6 +34,20 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+// gulp.task("stylen", function() {
+//   gulp.src("less/general/normalize.less")
+//     .pipe(plumber())
+//     .pipe(less())
+//     .pipe(postcss([
+//       autoprefixer()
+//     ]))
+//     .pipe(gulp.dest("build/css"))
+//     .pipe(minify())
+//     .pipe(rename("normalize.min.css"))
+//     .pipe(gulp.dest("build/css"))
+//     // .pipe(server.stream());
+// });
+
 // ========минификация изображений=========
 gulp.task("image", function() {
   return gulp.src("img/**/*.{png,svg,jpeg,jpg}")
@@ -50,7 +64,7 @@ gulp.task("image", function() {
 
 gulp.task("compress", function (cb) {
   pump([
-        gulp.src("js/*.js"),
+        gulp.src((["js/*.js","!js/*.min.js"])),
         uglify(),
       rename({suffix: ".min"}),
         gulp.dest("build/js")
@@ -79,7 +93,7 @@ gulp.task("webp", function() {
 // ===========копирование файлов=========
 gulp.task("copy", function() {
   return gulp.src([
-    "font/**/*.{woff,woff2}",
+    "fonts/**/*.{woff,woff2}",
     "img/**",
     "js/**"
   ], {

@@ -5,6 +5,10 @@
   text-transform: uppercase;
 
   background-color: @bg--ligth-grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 
   .product__wrapper {
     width: 100%;
@@ -46,6 +50,37 @@
   background-position: 230px;
 }
 
+  .product__flag {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 10;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+  }
+
+    .product__name:nth-child(3)::before {
+    position: absolute;
+    content: "хит";
+    height: 10px;
+    width: 28px;
+    top: 20px;
+    left: 9px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    vertical-align: center;
+    text-transform: uppercase;
+    color: @bg--white;
+    background-color: @text-pink;
+    transform: rotate(-45deg);
+    z-index: 100;
+  }
+
+  .product__flag--hit {
+    background: url("../img/bg-hit.svg") no-repeat 0 0;
+  }
 
 .product__name-title {
   margin: 0;
@@ -65,9 +100,11 @@
 }
 
 .product__name {
+  position: relative;
   padding-top: 20px;
 
   border: 2px solid @text--white;
+  border-top-color: @bg--blue;
 }
 
 .product__item {
@@ -113,6 +150,7 @@
 .product__radio-right:checked ~ .slider-toggles .slider-toggles__control-right {
   background-color: @bg--white;
   border: 3px solid @bg--blue;
+  opacity: 1;
 }
 
 .product__radio-left:checked ~ .product__list {
@@ -140,6 +178,22 @@
 
     transform: none;
   }
+
+  .product__flag {
+    width: 61px;
+    height: 61px;
+  }
+
+    .product__flag--hit {
+      background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
+    }
+
+    .product__name:nth-child(3)::before {
+    top: 12px;
+    left: 5px;
+  }
+
+
 
   .product__name--empty {
     display: block;
@@ -210,9 +264,23 @@
     min-height: 98px;
   }
 
-  .product__list {
-    width: 940px;
+  .product__flag {
+    width: 74px;
+    height: 73px;
   }
+
+  .product__name:nth-child(3)::before {
+  top: 20px;
+  left: 9px;
+}
+
+.product__flag--hit {
+  background: url("../img/bg-hit.svg") no-repeat 0 0;
+}
+
+.product__list {
+  width: 940px;
+}
 
   .product__cost {
     font-weight: 300;

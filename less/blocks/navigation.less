@@ -18,6 +18,7 @@
 }
 
 .navigation__link {
+  position: relative;
   display: block;
   padding-top: 17px;
   padding-bottom: 17px;
@@ -80,6 +81,10 @@
 
     background-color: transparent;
   }
+
+  .navigation__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (max-width: @desktop--width) {
@@ -90,4 +95,5 @@
   // .navigation--nojs .navigation__list {
   //   display: block;
   // }
+
 }

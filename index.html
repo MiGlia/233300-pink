@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <title>Пинк главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="less/general/normalize.less">
+  <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
@@ -183,7 +186,7 @@
         </div>
       </div>
     </section>
-    <section class="product slider">
+    <section class="product">
       <div class="product__wrapper">
         <h2 class="visually-hidden">Тарифы</h2>
         <input type="radio" id="btn-table-left" name="toggle-price" class="visually-hidden product__radio-left">
@@ -198,6 +201,7 @@
                 <p class="product__cost">1,99 Usd</p>
               </th>
               <th class="product__name">
+                <div class="product__flag product__flag--hit"></div>
                 <span class="product__name-title">Стандарт</span>
                 <p class="product__cost">3,99 Usd</p>
               </th>
@@ -255,7 +259,7 @@
         <div class="slider-toggles slider-toggles--none product__toggle">
           <label class="slider-toggles__control slider-toggles__control-left" for="btn-table-left"></label>
           <label class="slider-toggles__control slider-toggles__control-middle" for="btn-table-middle"></label>
-          <label class="slider-toggles__control .slider-toggles__control-right" for="btn-table-right"></label>
+          <label class="slider-toggles__control slider-toggles__control-right" for="btn-table-right"></label>
         </div>
       </div>
     </section>
@@ -349,6 +353,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/menu.js"></script>
+  <script src="js\picturefill.min.js"></script>
+  <script src="js/menu.min.js"></script>
 </body>
 </html>
