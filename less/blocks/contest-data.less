@@ -209,6 +209,27 @@
   padding-bottom: 20px;
 }
 
+.contest-data__input:hover,
+.contest-data__input:focus {
+  border-color:  @bg--blue;
+}
+
+.contest-data__input:active {
+  border-color:  @text-pink;
+}
+
+.contest-data__label--radio:hover::before,
+.contest-data__label--radio:focus::before,
+.contest-data__label--checkbox:hover::before,
+.contest-data__label--checkbox:focus::before {
+  border-color: @bg--blue;
+}
+
+.contest-data__label--radio:active::before,
+.contest-data__label--checkbox:active::before {
+  border-color:@text-pink;
+}
+
 @media (min-width: @tablet--width) {
   .contest-data__block {
     width: 620px;

@@ -30,6 +30,16 @@
   background-position: center top;
 }
 
+.map::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-map-marker.svg");
+  width: 36px;
+  height: 35px;
+  z-index: 100;
+  top: 50%;
+}
+
 @media (min-width: @tablet--width) {
   .map {
     height: 376px;

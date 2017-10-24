@@ -25,9 +25,9 @@
       background-color: @bg--white;
     }
 
-      &--downloads:active {
+    &--downloads:active {
         color: rgba(210, 40, 86, 0.3);
-      }
+    }
 
   &--green {
     width: 276px;
@@ -45,6 +45,16 @@
     cursor: pointer;
   }
 
+  &--green:hover,
+  &--green:focus {
+    background-color: #1c9b5e;
+  }
+
+&--green:active {
+  color:rgba(255,255,255, 0.3);
+}
+
+
   &--submit {
     display: block;
     margin-bottom: 12px;
@@ -61,6 +71,17 @@
     border-radius: 30px;
   }
 
+  &--submit:hover,
+  &--submit:focus {
+    background-color: @text-pink;
+    color: @text--white;
+  }
+
+  &--submit:active {
+
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--reset {
     display: block;
     padding: 15px 88px 18px;
@@ -75,6 +96,17 @@
     border: 3px solid @text--blue;
     border-radius: 30px;
     opacity: 0.1;
+  }
+
+  &--reset:hover,
+  &--reset:focus {
+    opacity: 0.3;
+  }
+
+  &--reset:active {
+    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @text--blue;
   }
 }
 
