@@ -5,7 +5,7 @@
   padding-bottom: 35px;
 
   .features__wrapper,
-  .features__wrapper-list {
+  .features__list {
     .wrapper();
   }
 }
@@ -15,6 +15,14 @@
   font-size: @font-size--big;
   line-height: @line-height--h2;
   color: @text--blue;
+}
+
+.features__wrapper-list {
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
+  background-color: @bg--grey;
 }
 
 .features__item {
@@ -91,7 +99,7 @@
   .features__wrapper-list::before {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     left: 0;
 
     width: 268px;

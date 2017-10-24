@@ -22,6 +22,10 @@
   font-style: normal;
 }
 
+.review__slider {
+  display: none;
+}
+
 .review__quote {
   display: flex;
   flex-direction: column;
@@ -114,7 +118,7 @@
   .review__wrapper {
     padding-top: 190px;
     padding-bottom: 8px;
-    // background-image: url(""};
+    background-image: url("../img/icon-quotes.svg");
 
     background-repeat: no-repeat;
     background-position: 50% 5px;
@@ -122,6 +126,10 @@
 
   .review .review__toggle {
     display: none;
+  }
+
+  .review__slider {
+    display: block;
   }
 
   .review__name {
@@ -137,5 +145,40 @@
   .review__text {
     padding-right: 95px;
     padding-left: 95px;
+  }
+
+  .review__slider {
+    position: relative;
+  }
+
+  .review__arrow--back {
+    position: absolute;
+    top: -197px;
+    left: 19px;
+  }
+
+  .review__arrow--next {
+    position: absolute;
+    top: -197px;
+    right: 19px;
+
+  }
+
+  .review__arrow-right,
+  .review__arrow-left {
+    fill: @bg--blue;
+    opacity: 0.3;
+  }
+
+  .review__arrow-right:hover,
+  .review__arrow-right:focus,
+  .review__arrow-left:hover,
+  .review__arrow-left:focus {
+    opacity: 0.6;
+  }
+
+  .review__arrow-right:active,
+  .review__arrow-left:active {
+    opacity: 0.1;
   }
 }

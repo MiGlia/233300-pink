@@ -51,7 +51,7 @@ gulp.task("style", function() {
 
 // ==================SVG спрайт==========
 gulp.task("sprite", function() {
-  return gulp.src("img/*.svg")
+  return gulp.src("img/sp-*.svg")
   .pipe(svgstore({
     inlineSvg :true
   }))

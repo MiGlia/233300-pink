@@ -2,7 +2,6 @@
   content: "";
   position: absolute;
   top: 110px;
-  // z-index: 10;
 
   width: 100%;
   min-height: 66px;
@@ -41,6 +40,11 @@
   cursor: pointer;
 }
 
+.header__button-cross,
+.header__button-burger {
+  fill:@text--white;
+}
+
 
 .header__button-toggle--closed .header__button-cross {
   display: none;
@@ -67,8 +71,6 @@
   opacity: 0.3
 }
 
-
-
 .header__logo-image {
   display: block;
 }
@@ -91,11 +93,6 @@
   fill: @bg--white;
   opacity: 0.3;
 }
-
-
-
-
-
 
 @media (min-width: @tablet--width) {
   .header {
