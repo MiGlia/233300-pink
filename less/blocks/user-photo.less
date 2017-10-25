@@ -82,12 +82,25 @@
 }
 
 .user-photo__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 0;
   padding-bottom: 20px;
 
   // background-color: @bg--grey;
+}
+
+.user-photo__text-panorama {
+  position: absolute;
+padding: 7px 23px 6px;
+right: 0;
+top: 0;
+font-size: @font-size--small;
+line-height: 24px;
+color: @text--white;
+text-transform: uppercase;
+background-color: @text-pink;
 }
 
 @media (min-width: @tablet--width) {

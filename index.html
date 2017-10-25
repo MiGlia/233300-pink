@@ -13,10 +13,11 @@
 </head>
 <body>
   <header class="header">
+    <div class="header-nav">
     <div class="header__wrapper">
       <div class="header__wrapper-logo">
         <a class="header__logo">
-        <svg class="header__logo-mobile" width="74.426px" height="22.859px"><use xlink:href="img/sprite.svg#sp-mobile"></use></svg>
+        <svg class="header__logo-mobile" width="74.426px" height="22.859px"><use xlink:href="img/sprite.svg#sp-logo-pink-white-mobile"></use></svg>
         <svg class="header__logo-tablet" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#sp-logo-pink-white-tablet"></use></svg>
         <svg class="header__logo-desktop" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#sp-logo-pink-white-desktop"></use></svg>
         </a>
@@ -45,6 +46,7 @@
         </ul>
       </nav>
     </div>
+  </div>
   </header>
   <main class="page-title">
     <section class="page-title__block">
@@ -138,10 +140,12 @@
         </div>
 <div class="review__slider">
           <a  class="review__arrow review__arrow--next">
-            <svg class="review__arrow-right" width="21.706px" height="41.719px"><span class="visually-hidden">Следующий отзыв</span><use xlink:href="img/sprite.svg#sp-icon-review-arrow-right"></use></svg>
+            <span class="visually-hidden">Следующий отзыв</span>
+            <svg class="review__arrow-right" width="21.706px" height="41.719px"><use xlink:href="img/sprite.svg#sp-icon-review-arrow-right"></use></svg>
           </a>
           <a  class="review__arrow review__arrow--back">
-            <svg class="review__arrow-left" width="21.706px" height="41.719px"><span class="visually-hidden">Предыдущий отзыв отзыв</span><use xlink:href="img/sprite.svg#sp-icon-review-arrow-left"></use></svg>
+            <span class="visually-hidden">Предыдущий отзыв отзыв</span>
+            <svg class="review__arrow-left" width="21.706px" height="41.719px"><use xlink:href="img/sprite.svg#sp-icon-review-arrow-left"></use></svg>
           </a>
 </div>
       </div>
@@ -150,7 +154,7 @@
       <div class="product__wrapper">
         <h2 class="visually-hidden">Тарифы</h2>
         <input type="radio" id="btn-table-left" name="toggle-price" class="visually-hidden product__radio-left">
-        <input type="radio" id="btn-table-middle" name="toggle-price" class="visually-hidden product__radio-middle" checked="">
+        <input type="radio" id="btn-table-middle" name="toggle-price" class="visually-hidden product__radio-middle" checked>
         <input type="radio" id="btn-table-right" name="toggle-price" class="visually-hidden product__radio-right">
         <table class="product__list">
           <thead class="product__list-head">
@@ -244,7 +248,7 @@
         </ul>
       </div>
     </section>
-    <div class="map">
+    <div class="map" id="map-canvas">
     </div>
   </main>
   <footer class="footer footer--index">
@@ -281,8 +285,10 @@
       </div>
     </div>
   </footer>
-  <script src="js\picturefill.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script src="js/picturefill.min.js"></script>
   <script src="js/menu.min.js"></script>
-  <script src="svg4everbody.min.js"></script>
+  <script src="js/map.min.js"></script>
+  <script src="js/svg4everbody.min.js"></script>
 </body>
 </html>

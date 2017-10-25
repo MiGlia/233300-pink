@@ -17,6 +17,12 @@
   padding-bottom: 17px;
 }
 
+.header-nav {
+  min-height: 66px;
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+}
+
 .navigation__link {
   position: relative;
   display: block;
@@ -68,6 +74,16 @@
     min-width: 750px;
   }
 
+  .navigation__link--current-page::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      top: 54px;
+      left: 82px;
+      right: 0;
+      background-color: #fff;
+    }
+
   .navigation__link {
     padding-left: 82px;
 
@@ -92,8 +108,9 @@
     display: none;
   }
 
-  // .navigation--nojs .navigation__list {
-  //   display: block;
-  // }
+  .navigation--nojs .navigation__list {
+    display: block;
+  }
+
 
 }
