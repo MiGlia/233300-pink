@@ -3,14 +3,16 @@
 
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   padding-bottom: 30px;
+  overflow: hidden;
 
 
   .review__wrapper {
-    .wrapper();
     position: relative;
+
     padding-bottom: 20px;
+
+    .wrapper();
   }
 }
 
@@ -48,8 +50,9 @@
 }
 
 .review__item {
-  transition: 0.3s ease-out;
   display: none;
+
+  transition: 0.3s ease-out;
 }
 
 .review__radio-left:checked ~ .slider-toggles .slider-toggles__review-left,
@@ -129,8 +132,8 @@
   .review__wrapper {
     padding-top: 187px;
     padding-bottom: 8px;
-    background-image: url("../img/icon-quotes.svg");
 
+    background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 75px;
   }
@@ -176,13 +179,13 @@
     position: absolute;
     top: -193px;
     right: 0;
-
   }
 
   .review__arrow-right,
   .review__arrow-left {
-    fill: @bg--blue;
     opacity: 0.3;
+
+    fill: @bg--blue;
   }
 
   .review__arrow-right:hover,

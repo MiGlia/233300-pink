@@ -4,8 +4,6 @@
   <meta charset="utf-8">
   <title>Pink: конкурс</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- <link rel="stylesheet" href="less/general/normalize.less"> -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
@@ -55,211 +53,209 @@
     <section class="photo-album">
       <div class="photo-album__wrapper">
         <h2 class="photo-album__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает ваших?</h2>
-        </div>
-        <section class="photo-album__section user-photo">
-          <h2 class="visually-hidden">Галлерея фотографий</h2>
-          <article class="user-photo__item user-photo__item--foto-day">
-            <div class="user-photo__text-panorama">Панорама дня</div>
-            <a class="user-photo__picture" href="#">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                    <img class="user-photo__image user-photo__image--photo-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
-                  </picture>
-                </a>
-                <div class="user-photo__wrapper-quote">
-                  <blockquote class="user-photo__quote user-photo__quote--wrapper">
-                    <cite class="user-photo__author">Анна<span>(5 минут назад)</span></cite>
-                    <p class="user-photo__text user-photo__text--order">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                    <a class="user-photo__text-like">Нравится: 215</a>
-                  </blockquote>
-                </div>
-              </article>
-              <div class="user-photo__wrapper">
-                <article class="user-photo__item">
-                  <a class="user-photo__picture" href="#">
-                    <picture>
-                      <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@1x.jpg 2x">
-                        <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-                          <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото пользователя">
-                        </picture>
-                      </a>
-                      <blockquote class="user-photo__quote">
-                        <cite class="user-photo__author">Левон<span>(5 часов назад)</span></cite>
-                        <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                        <a class="user-photo__text-like">Нравится: 356</a>
-                      </blockquote>
-                    </article>
-                    <article class="user-photo__item">
-                      <a class="user-photo__picture" href="#">
-                        <picture>
-                          <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-                            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-                              <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя">
-                            </picture>
-                          </a>
-                          <blockquote class="user-photo__quote">
-                            <cite class="user-photo__author">Антон<span>(12 часов назад)</span></cite>
-                            <p class="user-photo__text">Соседи будут рады!</p>
-                            <a class="user-photo__text-like">Нравится: 666</a>
-                          </blockquote>
-                        </article>
-                        <article class="user-photo__item">
-                          <a class="user-photo__picture" href="#">
-                            <picture>
-                              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-                                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-                                  <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
-                                </picture>
-                              </a>
-                              <blockquote class="user-photo__quote">
-                                <cite class="user-photo__author">Борис<span>(20 часов назад)</span></cite>
-                                <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                                <a class="user-photo__text-like">Нравится: 215</a>
-                              </blockquote>
-                            </article>
-                            <article class="user-photo__item">
-                              <a class="user-photo__picture" href="#">
-                                <picture>
-                                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-                                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-                                      <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя">
-                                    </picture>
-                                  </a>
-                                  <blockquote class="user-photo__quote">
-                                    <cite class="user-photo__author">Сергей<span>(25 часов назад)</span></cite>
-                                    <p class="user-photo__text">Самая кубанская в мире!</p>
-                                    <a class="user-photo__text-like">Нравится: 4</a>
-                                  </blockquote>
-                                </article>
-                                <article class="user-photo__item">
-                                  <a class="user-photo__picture" href="#">
-                                    <picture>
-                                      <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                                        <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-                                          <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя">
-                                        </picture>
-                                      </a>
-                                      <blockquote class="user-photo__quote">
-                                        <cite class="user-photo__author">Максим<span>(40 часов назад)</span></cite>
-                                        <p class="user-photo__text">Где снег-то?</p>
-                                        <a class="user-photo__text-like">Нравится: 150</a>
-                                      </blockquote>
-                                    </article>
-                                    <article class="user-photo__item">
-                                      <a class="user-photo__picture" href="#">
-                                        <picture>
-                                          <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-                                            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-                                              <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя">
-                                            </picture>
-                                          </a>
-                                          <blockquote class="user-photo__quote">
-                                            <cite class="user-photo__author">Надежда<span>(45 часов назад)</span></cite>
-                                            <p class="user-photo__text">Всем GM и взаимные лайки!</p>
-                                            <a class="user-photo__text-like">Нравится: 2560</a>
-                                          </blockquote>
-                                        </article>
-                                      </div>
-                                    </section>
-                                    <form class="image-load">
-                                      <div class="image-load__title-wrapper">
-                                        <h3 class="image-load__title">Затмите их всех!<span>Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в</span> телефоне!</h3>
-                                      </div>
-                                      <section class="image-load__tools load-tools">
-                                        <div class="image-load__wrapper">
-                                          <div class="image-load__picture">
-                                            <picture>
-                                              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
-                                                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-                                                  <img class="user-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
-                                                </picture>
-                                              </div>
-                                              <div class="load-tools__wrapper">
-                                                <ul class="load-tools__list">
-                                                  <li class="load-tools__item load-tools__item--current">
-                                                    <div class="load-tools__bar">
+      </div>
+      <section class="photo-album__section user-photo">
+        <h2 class="visually-hidden">Галлерея фотографий</h2>
+        <article class="user-photo__item user-photo__item--foto-day">
+          <div class="user-photo__text-panorama">Панорама дня</div>
+          <a class="user-photo__picture" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="user-photo__image user-photo__image--photo-day" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <div class="user-photo__wrapper-quote">
+                <blockquote class="user-photo__quote user-photo__quote--wrapper">
+                  <cite class="user-photo__author">Анна<span>(5 минут назад)</span></cite>
+                  <p class="user-photo__text user-photo__text--order">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <a class="user-photo__text-like">Нравится: 215</a>
+                </blockquote>
+              </div>
+            </article>
+            <div class="user-photo__wrapper">
+              <article class="user-photo__item">
+                <a class="user-photo__picture" href="#">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@1x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                        <img class="user-photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото пользователя">
+                      </picture>
+                    </a>
+                    <blockquote class="user-photo__quote">
+                      <cite class="user-photo__author">Левон<span>(5 часов назад)</span></cite>
+                      <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                      <a class="user-photo__text-like">Нравится: 356</a>
+                    </blockquote>
+                  </article>
+                  <article class="user-photo__item">
+                    <a class="user-photo__picture" href="#">
+                      <picture>
+                        <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                          <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                            <img class="user-photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя">
+                          </picture>
+                        </a>
+                        <blockquote class="user-photo__quote">
+                          <cite class="user-photo__author">Антон<span>(12 часов назад)</span></cite>
+                          <p class="user-photo__text">Соседи будут рады!</p>
+                          <a class="user-photo__text-like">Нравится: 666</a>
+                        </blockquote>
+                      </article>
+                      <article class="user-photo__item">
+                        <a class="user-photo__picture" href="#">
+                          <picture>
+                            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                                <img class="user-photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
+                              </picture>
+                            </a>
+                            <blockquote class="user-photo__quote">
+                              <cite class="user-photo__author">Борис<span>(20 часов назад)</span></cite>
+                              <p class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                              <a class="user-photo__text-like">Нравится: 215</a>
+                            </blockquote>
+                          </article>
+                          <article class="user-photo__item">
+                            <a class="user-photo__picture" href="#">
+                              <picture>
+                                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                                    <img class="user-photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя">
+                                  </picture>
+                                </a>
+                                <blockquote class="user-photo__quote">
+                                  <cite class="user-photo__author">Сергей<span>(25 часов назад)</span></cite>
+                                  <p class="user-photo__text">Самая кубанская в мире!</p>
+                                  <a class="user-photo__text-like">Нравится: 4</a>
+                                </blockquote>
+                              </article>
+                              <article class="user-photo__item">
+                                <a class="user-photo__picture" href="#">
+                                  <picture>
+                                    <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                                      <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                                        <img class="user-photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя">
+                                      </picture>
+                                    </a>
+                                    <blockquote class="user-photo__quote">
+                                      <cite class="user-photo__author">Максим<span>(40 часов назад)</span></cite>
+                                      <p class="user-photo__text">Где снег-то?</p>
+                                      <a class="user-photo__text-like">Нравится: 150</a>
+                                    </blockquote>
+                                  </article>
+                                  <article class="user-photo__item">
+                                    <a class="user-photo__picture" href="#">
+                                      <picture>
+                                        <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                                          <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                                            <img class="user-photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя">
+                                          </picture>
+                                        </a>
+                                        <blockquote class="user-photo__quote">
+                                          <cite class="user-photo__author">Надежда<span>(45 часов назад)</span></cite>
+                                          <p class="user-photo__text">Всем GM и взаимные лайки!</p>
+                                          <a class="user-photo__text-like">Нравится: 2560</a>
+                                        </blockquote>
+                                      </article>
+                                    </div>
+                                  </section>
+                                  <form class="image-load">
+                                    <div class="image-load__title-wrapper">
+                                      <h3 class="image-load__title">Затмите их всех!<span>Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось в</span> телефоне!</h3>
+                                    </div>
+                                    <section class="image-load__tools load-tools">
+                                      <div class="image-load__wrapper">
+                                        <div class="image-load__picture">
+                                          <picture>
+                                            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+                                              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                                                <img class="user-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото пользователя">
+                                              </picture>
+                                            </div>
+                                            <div class="load-tools__wrapper">
+                                              <ul class="load-tools__list">
+                                                <li class="load-tools__item load-tools__item--current">
+                                                  <div class="load-tools__bar">
 
-                                                      <svg class="load-tools__image load-tools__image--crop" width="48px" height="48px"><use xlink:href="img/sprite.svg#sp-icon-editor-crop"></use></svg>
+                                                    <svg class="load-tools__image load-tools__image--crop" width="48px" height="48px"><use xlink:href="img/sprite.svg#sp-icon-editor-crop"></use></svg>
+                                                  </div>
+                                                  <div class="load-tools__scale load-tools__scale--crop">
+                                                    <div class="load-tools__scale-box">
+                                                      <div class="load-tools__scale-line"></div>
+                                                      <div class="load-tools__scale-circle load-tools__scale-circle--crop"></div>
                                                     </div>
-                                                    <div class="load-tools__scale load-tools__scale--crop">
-                                                      <div class="load-tools__scale-box">
-                                                        <div class="load-tools__scale-line"></div>
-                                                        <div class="load-tools__scale-circle load-tools__scale-circle--crop"></div>
-                                                      </div>
+                                                  </div>
+                                                </li>
+                                                <li class="load-tools__item">
+                                                  <div class="load-tools__bar">
+                                                    <svg class="load-tools__image load-tools__image--fill" width="48px" height="48px"><use xlink:href="img/sprite.svg#sp-icon-editor-fill"></use></svg>
+                                                  </div>
+                                                  <div class="load-tools__scale load-tools__scale--fill">
+                                                    <div class="load-tools__scale-box">
+                                                      <div class="load-tools__scale-line"></div>
+                                                      <div class="load-tools__scale-circle load-tools__scale-circle--fill"></div>
                                                     </div>
-                                                  </li>
-                                                  <li class="load-tools__item">
-                                                    <div class="load-tools__bar">
-                                                      <svg class="load-tools__image load-tools__image--fill" width="48px" height="48px"><use xlink:href="img/sprite.svg#sp-icon-editor-fill"></use></svg>
+                                                  </div>
+                                                </li>
+                                                <li class="load-tools__item">
+                                                  <div class="load-tools__bar">
+                                                    <svg class="load-tools__image load-tools__image--contrast" width="31.92px" height="31.92px"><use xlink:href="img/sprite.svg#sp-icon-editor-contrast"></use></svg>
+                                                  </div>
+                                                  <div class="load-tools__scale load-tools__scale--contrast">
+                                                    <div class="load-tools__scale-box">
+                                                      <div class="load-tools__scale-line"></div>
+                                                      <div class="load-tools__scale-circle load-tools__scale-circle--contrast"></div>
                                                     </div>
-                                                    <div class="load-tools__scale load-tools__scale--fill">
-                                                      <div class="load-tools__scale-box">
-                                                        <div class="load-tools__scale-line"></div>
-                                                        <div class="load-tools__scale-circle load-tools__scale-circle--fill"></div>
-                                                      </div>
-                                                    </div>
-                                                  </li>
-                                                  <li class="load-tools__item">
-                                                    <div class="load-tools__bar">
-                                                      <svg class="load-tools__image load-tools__image--contrast" width="31.92px" height="31.92px"><use xlink:href="img/sprite.svg#sp-icon-editor-contrast"></use></svg>
-                                                    </div>
-                                                    <div class="load-tools__scale load-tools__scale--contrast">
-                                                      <div class="load-tools__scale-box">
-                                                        <div class="load-tools__scale-line"></div>
-                                                        <div class="load-tools__scale-circle load-tools__scale-circle--contrast"></div>
-                                                      </div>
-                                                    </div>
-                                                  </li>
-                                                </ul>
-                                                <div class="button__wrapper">
-                                                  <button class="button button--submit" type="submit">Запостить</button>
-                                                  <button class="button button--reset" type="reset">Отмена</button>
-                                                </div>
+                                                  </div>
+                                                </li>
+                                              </ul>
+                                              <div class="button__wrapper">
+                                                <button class="button button--submit" type="submit">Запостить</button>
+                                                <button class="button button--reset" type="reset">Отмена</button>
                                               </div>
                                             </div>
-                                          </section>
-                                        </form>
-                                      </section>
-                                    </main>
-                                    <footer class="footer">
-                                      <div class="footer__wrapper">
-                                        <a class="footer__logo">
-                                          <svg class="footer__logo-link footer__logo-link--tablet" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#sp-logo-pink-blue-mobile"></use></svg>
-                                          <svg class="footer__logo-link footer__logo-link--desktop" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#sp-logo-pink-blue-desktop"></use></svg>
-                                        </a>
-                                        <section class="footer__social social">
-                                          <h3 class="visually-hidden">Мы в социальных сетях</h3>
-                                          <ul class="social__list">
-                                            <li class="social__item">
-                                              <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твиттер</span>
-                                                <svg class="social__icon social__icon--tw" width="17.5px" height="14.663px"><use xlink:href="img/sprite.svg#sp-icon-twitter"></use></svg>
-                                              </a>
-                                            </li>
-                                            <li class="social__item">
-                                              <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span>
-                                                <svg class="social__icon social__icon--fb" width="8.673px" height="18.944px"><use xlink:href="img/sprite.svg#sp-icon-facebook"></use></svg>
-                                              </a>
-                                            </li>
-                                            <li class="social__item">
-                                              <a class="social__link social__link--yt" href="#"><span class="visually-hidden">Youtube</span>
-                                                <svg class="social__icon social__icon--yt" width="14.64px" height="13.96px"><use xlink:href="img/sprite.svg#sp-icon-youtube"></use></svg>
-                                              </a>
-                                            </li>
-                                          </ul>
+                                          </div>
                                         </section>
-                                        <div class="footer__copyright copyright">
-                                          <b class="copyright__text">Разработано</b>
-                                          <a class="copyright__link" href="https://htmlacademy.ru"><span class="visually-hidden">Html Academy</span>
-                                            <svg class="copyright__icon" width="26.943px" height="34.09px"><use xlink:href="img/sprite.svg#sp-logo-htmlacademy"></use></svg>
-                                          </a>
-                                        </div>
+                                      </form>
+                                    </section>
+                                  </main>
+                                  <footer class="footer">
+                                    <div class="footer__wrapper">
+                                      <a class="footer__logo">
+                                        <svg class="footer__logo-link footer__logo-link--tablet" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#sp-logo-pink-blue-mobile"></use></svg>
+                                        <svg class="footer__logo-link footer__logo-link--desktop" width="146.3px" height="40.375px"><use xlink:href="img/sprite.svg#sp-logo-pink-blue-desktop"></use></svg>
+                                      </a>
+                                      <section class="footer__social social">
+                                        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+                                        <ul class="social__list">
+                                          <li class="social__item">
+                                            <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твиттер</span>
+                                              <svg class="social__icon social__icon--tw" width="17.5px" height="14.663px"><use xlink:href="img/sprite.svg#sp-icon-twitter"></use></svg>
+                                            </a>
+                                          </li>
+                                          <li class="social__item">
+                                            <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Фейсбук</span>
+                                              <svg class="social__icon social__icon--fb" width="8.673px" height="18.944px"><use xlink:href="img/sprite.svg#sp-icon-facebook"></use></svg>
+                                            </a>
+                                          </li>
+                                          <li class="social__item">
+                                            <a class="social__link social__link--yt" href="#"><span class="visually-hidden">Youtube</span>
+                                              <svg class="social__icon social__icon--yt" width="14.64px" height="13.96px"><use xlink:href="img/sprite.svg#sp-icon-youtube"></use></svg>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </section>
+                                      <div class="footer__copyright copyright">
+                                        <b class="copyright__text">Разработано</b>
+                                        <a class="copyright__link" href="https://htmlacademy.ru"><span class="visually-hidden">Html Academy</span>
+                                          <svg class="copyright__icon" width="26.943px" height="34.09px"><use xlink:href="img/sprite.svg#sp-logo-htmlacademy"></use></svg>
+                                        </a>
                                       </div>
-                                    </footer>
-                                    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-                                    <script src="js/picturefill.min.js"></script>
-                                    <script src="js/menu.min.js"></script>
-                                    <script src="js/map.min.js"></script>
-                                    <script src="js/svg4everbody.min.js"></script>
-                                  </body>
-                                  </html>
+                                    </div>
+                                  </footer>
+                                  <script src="js/picturefill.min.js"></script>
+                                  <script src="js/menu.min.js"></script>
+                                  <script src="js/svg4everbody.min.js"></script>
+                                </body>
+                                </html>

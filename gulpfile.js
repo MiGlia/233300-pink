@@ -35,20 +35,6 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-// gulp.task("stylen", function() {
-//   gulp.src("less/general/normalize.less")
-//     .pipe(plumber())
-//     .pipe(less())
-//     .pipe(postcss([
-//       autoprefixer()
-//     ]))
-//     .pipe(gulp.dest("build/css"))
-//     .pipe(minify())
-//     .pipe(rename("normalize.min.css"))
-//     .pipe(gulp.dest("build/css"))
-//     // .pipe(server.stream());
-// });
-
 // ==================SVG спрайт==========
 gulp.task("sprite", function() {
   return gulp.src("img/sp-*.svg")
@@ -58,8 +44,6 @@ gulp.task("sprite", function() {
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
 });
-
-
 
 // ========минификация изображений=========
 gulp.task("image", function() {
@@ -95,7 +79,6 @@ gulp.task("html", function() {
   .pipe(gulp.dest("build"));
 });
 
-
 // ==========Изображения WEBP===========
 gulp.task("webp", function() {
   return gulp.src("img/**/*.{png,jpg}")
@@ -119,7 +102,6 @@ gulp.task("copy", function() {
   gulp.task("clean", function() {
     return del("build");
   });
-
 
 // =============Последовательный запуск===
 gulp.task("build", function(done) {

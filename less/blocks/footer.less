@@ -42,17 +42,18 @@
 }
 
 .copyright__icon {
-  fill:@text-pink;
+  fill: @text-pink;
 }
 
 .copyright__icon:hover,
 .copyright__icon:focus {
-  fill:@bg--blue;
+  fill: @bg--blue;
 }
 
 .copyright__icon:active {
-  fill:@bg--blue;
   opacity: 0.3;
+
+  fill: @bg--blue;
 }
 
 .social__list {
@@ -64,6 +65,7 @@
 
 .social__link {
   position: relative;
+
   display: flex;
   width: 45px;
   height: 45px;
@@ -78,8 +80,9 @@
 .social__icon {
   display: flex;
   align-self: center;
-  fill: @text-pink;
   padding-left: 16px;
+
+  fill: @text-pink;
 }
 
 .social__link:hover,
@@ -92,15 +95,16 @@
   opacity: 0.1;
 }
 
-  .footer__logo-link:hover,
-  .footer__logo-link:focus {
-    fill: @text-pink;
-  }
+.footer__logo-link:hover,
+.footer__logo-link:focus {
+  fill: @text-pink;
+}
 
-  .footer__logo-link:active {
-    opacity: 0.3;
-    fill: @bg--blue;
-  }
+.footer__logo-link:active {
+  opacity: 0.3;
+
+  fill: @bg--blue;
+}
 
 @media (min-width: @tablet--width) {
   .footer__logo {
@@ -108,9 +112,9 @@
   }
 
   .social__list {
-    padding-bottom: 0;
-    padding-right: 5px;
     padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 0;
     padding-left: 0;
   }
 
@@ -120,18 +124,9 @@
 
   .footer__logo-link--tablet {
     display: block;
+
     fill: @bg--blue;
   }
-
-  // .footer__logo-link:hover,
-  // .footer__logo-link:focus {
-  //   fill: @text-pink;
-  // }
-  //
-  // .footer__logo-link:active {
-  //   opacity: 0.3;
-  //   fill: @bg--blue;
-  // }
 
   .footer__copyright {
     align-self: center;
@@ -143,20 +138,21 @@
   }
 
   .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-top: 20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-bottom: 33px;
+    padding-bottom: 33px;
   }
 }
 
 @media (min-width: @desktop--width) {
   .copyright__text {
+    padding-right: 16px;
+
     font-weight: 400;
     font-size: @font-size--bigger;
     line-height: @line-height--small;
-    padding-right: 16px;
   }
 
   .footer__logo {
@@ -172,8 +168,8 @@
   }
 
   .social__list {
-    padding-left: 24px;
     padding-top: 15px;
+    padding-left: 24px;
   }
   .footer__copyright {
     padding-top: 20px;

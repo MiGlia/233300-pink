@@ -26,27 +26,27 @@
 }
 
 .user-photo__quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 18px;
 
   text-align: left;
 
   background-color: #f3f3f3;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .user-photo__quote {
-  padding-top: 25px
+  padding-top: 25px;
 }
 
 .user-photo__author {
+  padding-bottom: 5px;
+
   font-weight: 700;
   font-size: @font-size;
   line-height: @line-height--small;
   font-style: normal;
-  padding-bottom: 5px;
 }
 
 .user-photo__author span {
@@ -59,15 +59,16 @@
 
 .user-photo__text {
   margin: 0;
+  padding-bottom: 8px;
 
   font-weight: 300;
   font-size: @font-size;
   line-height: (@line-height--base+0.05);
-  padding-bottom: 8px;
 }
 
 .user-photo__text-like {
   position: relative;
+
   display: block;
   align-self: flex-start;
   padding-top: 5px;
@@ -81,44 +82,47 @@
 }
 
 .user-photo__text-like::before {
-  position: absolute;
   content: "";
-  background-image: url("../img/icon-heart.svg");
+  position: absolute;
+  top: 10px;
+  left: 0;
+
   width: 13px;
   height: 12px;
-  left:0;
-  top: 10px;
+
+  background-image: url("../img/icon-heart.svg");
 }
 
 .user-photo__item {
   position: relative;
+
   display: flex;
   flex-direction: column;
   padding-top: 0;
   padding-bottom: 18px;
-
-  // background-color: @bg--grey;
 }
 
 .user-photo__text-panorama {
-position: absolute;
-padding: 7px 23px 6px;
-right: 10px;
-top: 0;
-font-size: @font-size--small;
-line-height: 24px;
-color: @text--white;
-text-transform: uppercase;
-background-color: @text-pink;
+  position: absolute;
+  top: 0;
+  right: 10px;
+
+  padding: 7px 23px 6px;
+
+  font-size: @font-size--small;
+  line-height: 24px;
+  color: @text--white;
+  text-transform: uppercase;
+
+  background-color: @text-pink;
 }
 
 @media (min-width: @tablet--width) {
-
   .user-photo__quote {
     min-height: 111px;
+    padding-top: 30px;
     padding-bottom: 16px;
     padding-left: 28px;
-    padding-top: 30px;
   }
 
   .user-photo__quote--wrapper {
@@ -128,9 +132,9 @@ background-color: @text-pink;
     justify-content: space-between;
     align-content: flex-start;
     padding-top: 10px;
+    padding-right: 30px;
     padding-bottom: 0;
     padding-left: 30px;
-    padding-right: 30px;
   }
 
   .user-photo__text--order {
@@ -148,12 +152,10 @@ background-color: @text-pink;
     flex-basis: 300px;
   }
 
-  // сомнительно=======================
   .user-photo__item--foto-day {
     min-height: 660px;
     padding-bottom: 20px;
   }
-  // ===============================
 
   .user-photo__image {
     display: block;
@@ -161,8 +163,8 @@ background-color: @text-pink;
 
   .user-photo__quote--wrapper .user-photo__text-like {
     padding-top: 15px;
-    padding-left: 0px;
     padding-right: 30px;
+    padding-left: 0;
   }
 
   .user-photo__quote--wrapper .user-photo__text-like::before {
@@ -172,45 +174,43 @@ background-color: @text-pink;
 
   .user-photo__quote--wrapper .user-photo__author {
     padding-top: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .user-photo__quote--wrapper .user-photo__text-like {
     margin-bottom: 0;
   }
 
-  // временнно==================
   .user-photo__image--photo-day {
     width: 100%;
     height: 509px;
   }
-  // =========================
 
   .user-photo__text-like {
-    padding-left: 0;
-    padding-right: 40px;
-    padding-top: 0px;
     margin-top: auto;
     margin-bottom: 8px;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-left: 0;
   }
 
   .user-photo__author {
     align-self: left;
-padding-top: 0;
-padding-bottom: 5px;
+    padding-top: 0;
+    padding-bottom: 5px;
   }
 
   .user-photo__text-panorama {
-    top:57px;
+    top: 57px;
   }
 
   .user-photo__text {
     padding-bottom: 0;
   }
 
-.user-photo__text-like::before {
-  left: 227px;
+  .user-photo__text-like::before {
     top: 5px;
+    left: 227px;
   }
 }
 
@@ -226,32 +226,31 @@ padding-bottom: 5px;
     padding-bottom: 55px;
   }
 
-.user-photo__quote--wrapper .user-photo__author {
-      padding-top: 32px;
-    }
+  .user-photo__quote--wrapper .user-photo__author {
+    padding-top: 32px;
+  }
 
-      .user-photo__quote--wrapper .user-photo__text-like {
-        padding-top: 26px;
-      }
+  .user-photo__quote--wrapper .user-photo__text-like {
+    padding-top: 26px;
+  }
 
-        .user-photo__quote--wrapper .user-photo__text-like::before {
-          top: 32px;
-          left: 105px;
-        }
+  .user-photo__quote--wrapper .user-photo__text-like::before {
+    top: 32px;
+    left: 105px;
+  }
 
 
   .user-photo__text-panorama {
-        right: 0;
     top: 115px;
+    right: 0;
   }
 
   .user-photo__item--foto-day {
+    min-height: 655px;
     padding-top: 60px;
     padding-bottom: 0;
-    min-height: 655px;
   }
 
-  // временно=============
   .user-photo__image {
     height: 400px;
   }
@@ -260,7 +259,6 @@ padding-bottom: 5px;
     width: 100%;
     height: 506px;
   }
-  //===================
 
   .user-photo__quote--wrapper {
     min-height: 96px;

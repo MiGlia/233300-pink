@@ -19,15 +19,16 @@
     border-radius: 30px;
   }
 
-    &--downloads:hover,
-    &--downloads:focus {
-      color: @text-pink;
-      background-color: @bg--white;
-    }
+  &--downloads:hover,
+  &--downloads:focus {
+    color: @text-pink;
 
-    &--downloads:active {
-        color: rgba(210, 40, 86, 0.3);
-    }
+    background-color: @bg--white;
+  }
+
+  &--downloads:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 
   &--green {
     width: 276px;
@@ -50,9 +51,9 @@
     background-color: #1c9b5e;
   }
 
-&--green:active {
-  color:rgba(255,255,255, 0.3);
-}
+  &--green:active {
+    color: rgba(255,255,255, 0.3);
+  }
 
 
   &--submit {
@@ -73,12 +74,12 @@
 
   &--submit:hover,
   &--submit:focus {
-    background-color: @text-pink;
     color: @text--white;
+
+    background-color: @text-pink;
   }
 
   &--submit:active {
-
     color: rgba(255, 255, 255, 0.3);
   }
 
@@ -104,15 +105,15 @@
   }
 
   &--reset:active {
-    opacity: 0.3;
     color: rgba(255, 255, 255, 0.3);
+
     background-color: @text--blue;
+    opacity: 0.3;
   }
 
   .button__wrapper {
     padding-top: 45px;
   }
-
 }
 
 @media (min-width: @tablet--width) {
@@ -125,15 +126,16 @@
   }
 
   .button--submit {
-    padding-left: 70px;
     padding-right: 86px;
+    padding-left: 70px;
   }
 }
 
 @media (min-width: @desktop--width) {
   .button--downloads {
-    font-size: 21px;
     padding: 15px 26px 15px 26px;
+
+    font-size: 21px;
   }
 
   .button__wrapper {
@@ -141,6 +143,4 @@
     flex-direction: row;
     padding-top: 92px;
   }
-
-
 }

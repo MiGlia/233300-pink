@@ -15,11 +15,11 @@
 
 .header__wrapper-logo {
   position: relative;
+  z-index: 20;
 
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
-  z-index: 20;
 
   .wrapper();
 }
@@ -46,7 +46,7 @@
 
 .header__button-cross,
 .header__button-burger {
-  fill:@text--white;
+  fill: @text--white;
 }
 
 .header__logo-mobile {
@@ -75,7 +75,7 @@
 
 .header__button-cross:active,
 .header__button-burger:active {
-  opacity: 0.3
+  opacity: 0.3;
 }
 
 .header__logo-image {
@@ -101,13 +101,15 @@
 }
 
 .header__logo-mobile:active {
-  fill: @bg--white;
   opacity: 0.3;
+
+  fill: @bg--white;
 }
 
 .header__logo:active {
-  fill: @bg--white;
   opacity: 0.3;
+
+  fill: @bg--white;
 }
 
 @media (min-width: @tablet--width) {
