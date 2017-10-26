@@ -9,20 +9,12 @@
       display: block;
     }
   }
+}
 
-  .footer__wrapper {
-    padding-top: 55px;
+.footer__wrapper {
+  padding-top: 40px;
 
-    .wrapper();
-
-    @media (min-width: @tablet--width) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-top: 33px;
-      padding-bottom: 33px;
-    }
-  }
+  .wrapper();
 }
 
 .footer__logo-link--desktop {
@@ -63,8 +55,6 @@
   opacity: 0.3;
 }
 
-
-
 .social__list {
   display: flex;
   justify-content: center;
@@ -102,6 +92,16 @@
   opacity: 0.1;
 }
 
+  .footer__logo-link:hover,
+  .footer__logo-link:focus {
+    fill: @text-pink;
+  }
+
+  .footer__logo-link:active {
+    opacity: 0.3;
+    fill: @bg--blue;
+  }
+
 @media (min-width: @tablet--width) {
   .footer__logo {
     padding-bottom: 0;
@@ -109,7 +109,9 @@
 
   .social__list {
     padding-bottom: 0;
-    padding-right: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-left: 0;
   }
 
   .footer__logo-link {
@@ -121,29 +123,31 @@
     fill: @bg--blue;
   }
 
-  .footer__logo-link:hover,
-  .footer__logo-link:focus {
-    fill: @text-pink;
-  }
-
-  .footer__logo-link:active {
-    opacity: 0.3;
-    fill: @bg--blue;
-  }
-
-
-
+  // .footer__logo-link:hover,
+  // .footer__logo-link:focus {
+  //   fill: @text-pink;
+  // }
+  //
+  // .footer__logo-link:active {
+  //   opacity: 0.3;
+  //   fill: @bg--blue;
+  // }
 
   .footer__copyright {
     align-self: center;
+    padding-top: 12px;
   }
 
   .copyright__text {
     padding-top: 10px;
   }
 
-  .footer {
-    padding-top: 5px;
+  .footer__wrapper {
+    padding-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 33px;
   }
 }
 
@@ -152,6 +156,7 @@
     font-weight: 400;
     font-size: @font-size--bigger;
     line-height: @line-height--small;
+    padding-right: 16px;
   }
 
   .footer__logo {
@@ -167,6 +172,14 @@
   }
 
   .social__list {
-    padding-left: 40px;
+    padding-left: 24px;
+    padding-top: 15px;
+  }
+  .footer__copyright {
+    padding-top: 20px;
+  }
+
+  .copyright__link {
+    padding-top: 8px;
   }
 }

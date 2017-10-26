@@ -1,6 +1,7 @@
 .user-photo {
   display: flex;
   flex-direction: column;
+  padding-bottom: 8px;
 
   .user-photo__wrapper {
     .wrapper();
@@ -25,15 +26,19 @@
 }
 
 .user-photo__quote {
-  padding: 20px;
+  padding: 18px;
 
   text-align: left;
 
   background-color: #f3f3f3;
 
-  // display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-photo__quote {
+  padding-top: 25px
 }
 
 .user-photo__author {
@@ -41,6 +46,7 @@
   font-size: @font-size;
   line-height: @line-height--small;
   font-style: normal;
+  padding-bottom: 5px;
 }
 
 .user-photo__author span {
@@ -56,14 +62,15 @@
 
   font-weight: 300;
   font-size: @font-size;
-  line-height: (@line-height--base+0.15);
+  line-height: (@line-height--base+0.05);
+  padding-bottom: 8px;
 }
 
 .user-photo__text-like {
   position: relative;
   display: block;
   align-self: flex-start;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-left: 32px;
 
   font-weight: 400;
@@ -79,6 +86,8 @@
   background-image: url("../img/icon-heart.svg");
   width: 13px;
   height: 12px;
+  left:0;
+  top: 10px;
 }
 
 .user-photo__item {
@@ -86,15 +95,15 @@
   display: flex;
   flex-direction: column;
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 
   // background-color: @bg--grey;
 }
 
 .user-photo__text-panorama {
-  position: absolute;
+position: absolute;
 padding: 7px 23px 6px;
-right: 0;
+right: 10px;
 top: 0;
 font-size: @font-size--small;
 line-height: 24px;
@@ -104,19 +113,29 @@ background-color: @text-pink;
 }
 
 @media (min-width: @tablet--width) {
+
+  .user-photo__quote {
+    min-height: 111px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    padding-top: 30px;
+  }
+
   .user-photo__quote--wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
-    padding-top: 16px;
+    padding-top: 10px;
     padding-bottom: 0;
-    padding-left: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  .user-photo__text {
+  .user-photo__text--order {
     order: 1;
+    padding-bottom: 0;
   }
 
   .user-photo__wrapper {
@@ -132,19 +151,32 @@ background-color: @text-pink;
   // сомнительно=======================
   .user-photo__item--foto-day {
     min-height: 660px;
+    padding-bottom: 20px;
   }
   // ===============================
 
-  .user-photo__quote {
-    min-height: 111px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-  }
-
   .user-photo__image {
     display: block;
-    width: 300px;
-    height: 300px;
+  }
+
+  .user-photo__quote--wrapper .user-photo__text-like {
+    padding-top: 15px;
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+
+  .user-photo__quote--wrapper .user-photo__text-like::before {
+    top: 20px;
+    left: 110px;
+  }
+
+  .user-photo__quote--wrapper .user-photo__author {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .user-photo__quote--wrapper .user-photo__text-like {
+    margin-bottom: 0;
   }
 
   // временнно==================
@@ -157,11 +189,28 @@ background-color: @text-pink;
   .user-photo__text-like {
     padding-left: 0;
     padding-right: 40px;
+    padding-top: 0px;
+    margin-top: auto;
+    margin-bottom: 8px;
   }
 
   .user-photo__author {
-    align-self: center;
-    padding-top: 8px;
+    align-self: left;
+padding-top: 0;
+padding-bottom: 5px;
+  }
+
+  .user-photo__text-panorama {
+    top:57px;
+  }
+
+  .user-photo__text {
+    padding-bottom: 0;
+  }
+
+.user-photo__text-like::before {
+  left: 227px;
+    top: 5px;
   }
 }
 
@@ -177,10 +226,28 @@ background-color: @text-pink;
     padding-bottom: 55px;
   }
 
+.user-photo__quote--wrapper .user-photo__author {
+      padding-top: 32px;
+    }
+
+      .user-photo__quote--wrapper .user-photo__text-like {
+        padding-top: 26px;
+      }
+
+        .user-photo__quote--wrapper .user-photo__text-like::before {
+          top: 32px;
+          left: 105px;
+        }
+
+
+  .user-photo__text-panorama {
+        right: 0;
+    top: 115px;
+  }
+
   .user-photo__item--foto-day {
-    padding-top: 65px;
+    padding-top: 60px;
     padding-bottom: 0;
-    // сомнительно=======================
     min-height: 655px;
   }
 
@@ -201,12 +268,7 @@ background-color: @text-pink;
     padding-bottom: 0;
   }
 
-  .user-photo__author,
-  .user-photo__text-like {
-    padding-top: 25px;
-  }
-
-  .user-photo__text-like {
-    padding-top: 10px;
+  .user-photo {
+    padding-bottom: 0;
   }
 }

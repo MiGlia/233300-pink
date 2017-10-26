@@ -13,7 +13,7 @@
 .photo-album__slogan {
   margin: 0;
   padding-top: 45px;
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 
   font-weight: 400;
   font-size: @font-size;
@@ -30,6 +30,10 @@
     font-size: @font-size--bigger;
     line-height: @line-height--base;
   }
+
+  .photo-album__wrapper {
+    padding-bottom: 27px;
+  }
 }
 
 @media (min-width: @desktop--width) {
@@ -37,5 +41,9 @@
     padding-right: 180px;
     padding-left: 180px;
     padding-bottom: 26px;
+  }
+
+  .photo-album__wrapper {
+    padding-bottom: 0;
   }
 }

@@ -1,9 +1,20 @@
 .contact {
-  padding-top: 50px;
+  padding-top: 44px;
 
   .contact__wrapper {
     .wrapper();
   }
+}
+
+.contact__info--text-red:hover,
+.contact__info--text-red:focus {
+  color: @bg--blue;
+  text-decoration: underline;
+}
+
+.contact__info--text-red:active {
+  text-decoration: none;
+  color: rgba(40,54,69, 0.3);
 }
 
 .contact__title {
@@ -69,7 +80,7 @@
   .contact__title {
     width: 400px;
     margin: 0 auto;
-    padding-bottom: 48px;
+    padding-bottom: 44px;
 
     font-weight: 300;
     font-size: 40px;
@@ -84,20 +95,24 @@
   }
 
   .contact {
-    padding-top: 82px;
+    padding-top: 48px;
   }
 
   .contact__item--number {
     padding-bottom: 45px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   .contact__item--mail {
-    padding-left: 30px;
+    padding-left: 40px;
   }
 
   .contact__item:last-child {
     padding-bottom: 35px;
+  }
+
+  .contact__text {
+    padding-bottom: 4px;
   }
 }
 
@@ -107,8 +122,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 15px;
+    padding-left: 10px;
   }
 
   .contact__item--number {
@@ -127,7 +142,7 @@
   .contact__title {
     width: 640px;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
 
     font-size: 50px;
     line-height: 60px;
@@ -135,6 +150,10 @@
 
   .contact__text {
     padding-bottom: 20px;
+  }
+
+  .contact__item--address .contact__text {
+    padding-left: 15px;
   }
 
   .contact {

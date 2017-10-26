@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  min-height: 200px;
+  min-height: 220px;
   overflow: hidden;
 
   background-color: @bg--ligth-grey;
@@ -38,6 +38,8 @@
   height: 35px;
   z-index: 100;
   top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
 }
 
 @media (min-width: @tablet--width) {
@@ -54,7 +56,7 @@
   .map::before {
     height: 80px;
 
-    background-size: 100% 68px;
+    background-size: 100% 64px;
   }
 }
 
@@ -73,6 +75,6 @@
   .map::before {
     height: 150px;
 
-    background-size: 100% 100px;
+    background-size: 100% 99px;
   }
 }
