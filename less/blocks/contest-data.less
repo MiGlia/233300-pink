@@ -270,6 +270,50 @@
     line-height: @line-height--base;
   }
 
+  .contest-data__list-item--phone,
+  .contest-data__list-item--mail {
+    position: relative;
+  }
+
+  .contest-data__list-item--phone::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 80px;
+    z-index: 2;
+
+    width: 21px;
+    height: 21px;
+
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  .contest-data__list-item--mail::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 80px;
+    z-index: 2;
+
+    width: 18px;
+    height: 13px;
+
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  .contest-data__list-item--phone::after,
+  .contest-data__list-item--mail::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 62px;
+
+    width: 59px;
+    height: 59px;
+
+    background-color: @border-grey;
+  }
+
   .contest-data__title--full {
     display: block;
   }
@@ -441,6 +485,14 @@
     padding-right: 70px;
     padding-bottom: 70px;
     padding-left: 70px;
+  }
+
+  .contest-data__list-item--phone::before {
+    right: 84px;
+  }
+
+  .contest-data__list-item--phone::after {
+    right: 68px;
   }
 
   .contest-data__form {

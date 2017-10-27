@@ -12,3 +12,63 @@
   background-color: @bg--white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
+
+.popup__container {
+  margin: 0 auto;
+  width: @width-wrapper;
+}
+
+.popup__title {
+  font-size: @font-size--bigger;
+  font-weight: 700;
+  line-height: @line-height--h2;
+  color: @text--black;
+}
+
+.popup__text {
+  font-size: @font-size;
+  line-height: @line-height--base;
+  font-weight: 400;
+}
+
+.popup__section--grey {
+  background-color: @bg--ligth-grey;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: @tablet--width) {
+  .popup {
+    width: 494px;
+  }
+
+  .popup__container {
+    margin: 0 auto;
+    width: 304px;
+  }
+
+.popup__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: @line-height--small;
+  color: @text--black;
+}
+
+.popup__text {
+  font-size: @font-size--bigger;
+  line-height: @line-height--base;
+  font-weight: 400;
+
+}
+}
+
+@media (min-width: @desktop--width) {
+  .popup {
+    width: 812px;
+  }
+
+  .popup__container {
+    margin: 0 auto;
+    width: 392px;
+  }
+}

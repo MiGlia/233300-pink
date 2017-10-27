@@ -134,11 +134,11 @@
         <fieldset class="contest-data__block contest-data__block--date">
           <legend class="contest-data__title contest-data__title--full">Контактная информация</legend>
           <ul class="contest-data__list">
-            <li class="contest-data__list-item">
+            <li class="contest-data__list-item contest-data__list-item--phone">
               <label class="contest-data__label-info" for="your-number">Номер телефона</label>
               <input class="contest-data__input" type="tel" id="your-number" name="your-number" placeholder="Номер, пожалуйста">
             </li>
-            <li class="contest-data__list-item">
+            <li class="contest-data__list-item contest-data__list-item--mail">
               <label class="contest-data__label-info" for="your-mail">Адрес почты</label>
               <input class="contest-data__input" type="email" id="your-mail" name="your-mail" placeholder="Введите почту *">
             </li>
@@ -174,14 +174,18 @@
       </form>
     </section>
     <div class="popup popup--error">
-      <h3 class="popup__title">Что-то пошло не так!</h3>
-      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <h3 class="popup__title">Что-то пошло не&nbsp;так!</h3>
+      <p class="popup__text">Проверьте поля, выделенные красным. Скорее всего, вы&nbsp;забыли их&nbsp;заполнить</p>
       <button class="popup__button button">Ok</button>
     </div>
     <div class="popup popup--successfully">
-      <h3 class="popup__title">Ваша заявка отправлена</h3>
-      <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <button class="popup__button button">Ok</button>
+      <div class="popup__container">
+        <h3 class="popup__title">Ваша заявка отправлена</h3>
+        <p class="popup__text">Спасибо за&nbsp;ваше участие, ваша заявка уже поступила к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;рассмотрим её&nbsp;и оповестим&nbsp;вас</p>
+      </div>
+      <div class="popup__section--grey">
+        <button class="button button--green">Закрыть окно</button>
+      </div>
     </div>
   </main>
   <footer class="footer">
