@@ -1,40 +1,41 @@
 .popup {
   position: fixed;
-  z-index: 100;
-  width: 320px;
-
-  display: none;
-  padding-top: 25px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  display: none;
+  width: 320px;
+  padding-top: 25px;
 
   background-color: @bg--white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transform: translate(-50%, -50%);
 }
 
 .popup__container {
-  margin: 0 auto;
   width: @width-wrapper;
+  margin: 0 auto;
 }
 
 .popup__title {
-  font-size: @font-size--bigger;
   font-weight: 700;
+  font-size: @font-size--bigger;
   line-height: @line-height--h2;
   color: @text--black;
 }
 
 .popup__text {
+  font-weight: 400;
   font-size: @font-size;
   line-height: @line-height--base;
-  font-weight: 400;
 }
 
 .popup__section--grey {
-  background-color: @bg--ligth-grey;
   padding-top: 70px;
   padding-bottom: 70px;
+
+  background-color: @bg--ligth-grey;
 }
 
 .popup--error {
@@ -51,32 +52,32 @@
   }
 
   .popup__container {
-    margin: 0 auto;
     width: 304px;
+    margin: 0 auto;
   }
 
-.popup__title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: @line-height--small;
-  color: @text--black;
-}
+  .popup__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: @line-height--small;
+    color: @text--black;
+  }
 
-.popup--error .popup__title {
-  padding-left: 80px;
-  padding-right: 80px;
-}
+  .popup--error .popup__title {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
 
-.popup--error .popup__text {
-  padding-left: 60px;
-  padding-right: 60px;
-}
+  .popup--error .popup__text {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 
-.popup__text {
-  font-size: @font-size--bigger;
-  line-height: @line-height--base;
-  font-weight: 400;
-}
+  .popup__text {
+    font-weight: 400;
+    font-size: @font-size--bigger;
+    line-height: @line-height--base;
+  }
 }
 
 @media (min-width: @desktop--width) {
@@ -89,17 +90,17 @@
   }
 
   .popup__container {
-    margin: 0 auto;
     width: 530px;
+    margin: 0 auto;
   }
 
   .popup--error .popup__title {
-    padding-left: 100px;
     padding-right: 100px;
+    padding-left: 100px;
   }
 
   .popup--error .popup__text {
-    padding-left: 70px;
     padding-right: 70px;
+    padding-left: 70px;
   }
 }
