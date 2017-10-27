@@ -1,5 +1,4 @@
 .header {
-
   &--photo {
     top: 0;
   }
@@ -19,7 +18,6 @@
 .header__wrapper {
   content: "";
   position: absolute;
-
 
   width: 100%;
   min-height: 66px;
@@ -116,7 +114,6 @@
 }
 
 @media (min-width: @tablet--width) {
-
   .header__logo-tablet {
     display: block;
   }
@@ -152,24 +149,29 @@
 
   .header__wrapper {
     position: relative;
+
     display: flex;
     width: 940px;
     min-height: 110px;
     margin: 0 auto;
+
     background-color: rgba(0, 0, 0, 0.0);
   }
 
   .header__wrapper-desktop {
-     background-color: rgba(0, 0, 0, 0.5);
-     width: 100%;
-     min-height: 110px;
-     position: absolute;
+    position: absolute;
+
+    width: 100%;
+    min-height: 110px;
+
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
 @media (max-width: @desktop--width) {
   .header__wrapper--nojs {
     position: initial;
+
     background-color: @bg--blue;
   }
 
