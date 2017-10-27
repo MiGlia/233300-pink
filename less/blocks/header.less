@@ -1,12 +1,4 @@
 .header {
-  content: "";
-  position: absolute;
-  top: 110px;
-
-  width: 100%;
-  min-height: 66px;
-
-  background-color: rgba(0, 0, 0, 0.5);
 
   &--photo {
     top: 0;
@@ -22,6 +14,17 @@
   padding-bottom: 20px;
 
   .wrapper();
+}
+
+.header__wrapper {
+  content: "";
+  position: absolute;
+
+
+  width: 100%;
+  min-height: 66px;
+
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header__button-toggle {
@@ -113,9 +116,6 @@
 }
 
 @media (min-width: @tablet--width) {
-  .header {
-    min-height: 110px;
-  }
 
   .header__logo-tablet {
     display: block;
@@ -155,5 +155,24 @@
     width: 940px;
     min-height: 110px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+
+  .header__wrapper-desktop {
+     background-color: rgba(0, 0, 0, 0.5);
+     width: 100%;
+     min-height: 110px;
+     position: absolute;
+  }
+}
+
+@media (max-width: @desktop--width) {
+  .header__wrapper--nojs {
+    position: initial;
+    background-color: @bg--blue;
+  }
+
+  .header__wrapper--nojs .header__button-toggle {
+    display: none;
   }
 }
