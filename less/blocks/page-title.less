@@ -110,3 +110,31 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: @tablet--width) {
+  .page-title__block--nojs {
+    background-position: center -70px;
+  }
+
+  .page-title__block--nojs .page-title__intro {
+    padding-top: 396px;
+  }
+
+  .page-title__block--nojs .page-title__intro::before {
+    top: 110px;
+  }
+}
+
+@media (min-width: @tablet--width) and (max-width: @desktopnj--width) {
+    .page-title__block--nojs .page-title__intro {
+      padding-top: 90px;
+    }
+
+    .page-title__block--nojs {
+      background-position: center -110px;
+    }
+
+    .page-title__block--nojs .page-title__intro::before {
+      top: 73px;
+    }
+}
