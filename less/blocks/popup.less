@@ -18,6 +18,30 @@
   margin: 0 auto;
 }
 
+.popup--successfully .popup__container  {
+  padding-bottom: 25px;
+}
+
+.popup--successfully .popup__title {
+  margin-bottom: 0;
+}
+
+.popup--successfully .popup__text {
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+
+.popup--error .popup__title {
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.popup--error .popup__text{
+  margin: 0;
+  padding-bottom: 40px;
+}
+
 .popup__title {
   font-weight: 700;
   font-size: @font-size--bigger;
@@ -32,35 +56,33 @@
 }
 
 .popup__section--grey {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   background-color: @bg--ligth-grey;
 }
 
 .popup--error {
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: @tablet--width) {
-  .popup--successfully {
-    width: 494px;
-  }
-
-  .popup--error {
+  .popup {
     width: 464px;
   }
 
+  .popup--successfully {
+  padding-top: 15px;
+}
+
   .popup__container {
-    width: 304px;
+    width: 340px;
     margin: 0 auto;
   }
 
   .popup__title {
-    font-weight: 700;
     font-size: 30px;
-    line-height: @line-height--small;
-    color: @text--black;
+    line-height: @line-height--h2;
   }
 
   .popup--error .popup__title {
@@ -71,22 +93,29 @@
   .popup--error .popup__text {
     padding-right: 60px;
     padding-left: 60px;
+    line-height: @line-height--h2;
+  }
+
+  .popup--successfully .popup__text {
+    padding-top: 25px;
   }
 
   .popup__text {
     font-weight: 400;
     font-size: @font-size--bigger;
-    line-height: @line-height--base;
+    line-height: @line-height--h2;
   }
 }
 
 @media (min-width: @desktop--width) {
   .popup--successfully {
-    width: 812px;
+    width: 780px;
+    padding-top: 20px;
   }
 
   .popup--error {
     width: 462px;
+    padding-top: 30px;
   }
 
   .popup__container {
@@ -102,5 +131,10 @@
   .popup--error .popup__text {
     padding-right: 70px;
     padding-left: 70px;
+  }
+
+  .popup--successfully .popup__text {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
