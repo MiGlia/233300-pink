@@ -11,7 +11,7 @@
 
 .downloads__text {
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 
   font-weight: 300;
   font-size: @font-size;
@@ -27,29 +27,29 @@
 @media (min-width: @tablet--width) {
   .downloads__title {
     display: block;
-
-    font-weight: 300;
-    color: @text--white;
     margin: 0;
     padding-right: 36px;
     padding-bottom: 30px;
     padding-left: 36px;
 
+    font-weight: 300;
     font-size: 40px;
     line-height: 48px;
+    color: @text--white;
   }
 
   .downloads {
+    position: relative;
     width: 360px;
+    padding-top: 0;
+    padding-bottom: 22px;
 
     background-color: transparent;
-    padding-bottom: 22px;
-    padding-top: 0;
   }
 
   .downloads__wrapper {
-    padding-right: 40px;
     width: 300px;
+    padding-right: 40px;
   }
 }
 
@@ -74,5 +74,6 @@
 
   .downloads__text {
     padding-top: 24px;
+    padding-bottom: 122px;
   }
 }

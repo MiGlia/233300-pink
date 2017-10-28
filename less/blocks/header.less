@@ -1,14 +1,4 @@
 .header {
-  content: "";
-  position: absolute;
-  top: 110px;
-  // z-index: 10;
-
-  width: 100%;
-  min-height: 66px;
-
-  background-color: rgba(0, 0, 0, 0.5);
-
   &--photo {
     top: 0;
   }
@@ -16,19 +6,29 @@
 
 .header__wrapper-logo {
   position: relative;
+  z-index: 20;
 
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
-  z-index: 20;
 
   .wrapper();
+}
+
+.header__wrapper {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  min-height: 66px;
+
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header__button-toggle {
   position: absolute;
   top: 50%;
-  right: -35px;
+  right: 0;
 
   display: block;
   width: 50px;
@@ -37,8 +37,46 @@
 
   background-color: transparent;
   border: none;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   cursor: pointer;
+}
+
+.header__button-cross {
+  padding-left: 36px;
+}
+
+.header__button-cross,
+.header__button-burger {
+  fill: @text--white;
+}
+
+.header__logo-mobile {
+  fill: @text--white;
+}
+
+.header__button-toggle--closed .header__button-cross {
+  display: none;
+}
+
+.header__button-toggle .header__button-burger {
+  display: none;
+}
+
+.header__button-toggle--closed .header__button-burger {
+  display: block;
+}
+
+.header__button-cross:hover,
+.header__button-cross:focus,
+.header__button-burger:hover,
+.header__button-burger:focus {
+  fill: @text-pink;
+}
+
+
+.header__button-cross:active,
+.header__button-burger:active {
+  opacity: 0.3;
 }
 
 .header__logo-image {
@@ -50,12 +88,32 @@
   display: none;
 }
 
+.header__logo {
+  fill: @bg--white;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  fill: @text-pink;
+}
+
+.header__logo-mobile:hover {
+  fill: @text-pink;
+}
+
+.header__logo-mobile:active {
+  opacity: 0.3;
+
+  fill: @bg--white;
+}
+
+.header__logo:active {
+  opacity: 0.3;
+
+  fill: @bg--white;
+}
 
 @media (min-width: @tablet--width) {
-  .header {
-    min-height: 110px;
-  }
-
   .header__logo-tablet {
     display: block;
   }
@@ -90,9 +148,34 @@
   }
 
   .header__wrapper {
+    position: relative;
+
     display: flex;
     width: 940px;
     min-height: 110px;
     margin: 0 auto;
+
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .header__wrapper-desktop {
+    position: absolute;
+
+    width: 100%;
+    min-height: 110px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: @desktop--width) {
+  .header__wrapper--nojs {
+    position: initial;
+
+    background-color: @bg--blue;
+  }
+
+  .header__wrapper--nojs .header__button-toggle {
+    display: none;
   }
 }

@@ -3,13 +3,16 @@
 
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
   overflow: hidden;
 
 
   .review__wrapper {
-    .wrapper();
     position: relative;
+
     padding-bottom: 20px;
+
+    .wrapper();
   }
 }
 
@@ -20,6 +23,10 @@
   font-size: @font-size--bigger;
   line-height: line-height--base;
   font-style: normal;
+}
+
+.review__slider {
+  display: none;
 }
 
 .review__quote {
@@ -43,8 +50,9 @@
 }
 
 .review__item {
-  transition: 0.3s ease-out;
   display: none;
+
+  transition: 0.3s ease-out;
 }
 
 .review__radio-left:checked ~ .slider-toggles .slider-toggles__review-left,
@@ -52,6 +60,7 @@
 .review__radio-right:checked ~ .slider-toggles .slider-toggles__review-right {
   background-color: @bg--white;
   border: 3px solid @bg--blue;
+  opacity: 1;
 }
 
 .review__radio-left:checked ~ .review__list .review__item:first-child {
@@ -80,7 +89,7 @@
 
   .review__text {
     order: 1;
-    padding-bottom: 36px;
+    padding-bottom: 34px;
 
     font-weight: 400;
     font-size: @font-size--bigger;
@@ -106,21 +115,40 @@
     line-height: line-height--base;
     color: @text--blue;
   }
+
+  .review .review__toggle {
+    position: absolute;
+    bottom: 0;
+    left: 52%;
+  }
+
+  .review {
+    padding-bottom: 20px;
+  }
 }
 
 
 @media (min-width: @desktop--width) {
   .review__wrapper {
-    padding-top: 190px;
+    padding-top: 187px;
     padding-bottom: 8px;
-    // background-image: url(""};
 
+    background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
-    background-position: 50% 5px;
+    background-position: 50% 75px;
   }
 
   .review .review__toggle {
     display: none;
+  }
+
+  .review {
+    padding-bottom: 0;
+  }
+
+  .review__slider {
+    display: block;
+    position: relative;
   }
 
   .review__name {
@@ -134,7 +162,38 @@
   }
 
   .review__text {
-    padding-right: 95px;
-    padding-left: 95px;
+    align-self: center;
+    width: 700px;
+  }
+
+  .review__arrow--back {
+    position: absolute;
+    top: -193px;
+    left: 0;
+  }
+
+  .review__arrow--next {
+    position: absolute;
+    top: -193px;
+    right: 0;
+  }
+
+  .review__arrow-right,
+  .review__arrow-left {
+    opacity: 0.3;
+
+    fill: @bg--blue;
+  }
+
+  .review__arrow-right:hover,
+  .review__arrow-right:focus,
+  .review__arrow-left:hover,
+  .review__arrow-left:focus {
+    opacity: 0.6;
+  }
+
+  .review__arrow-right:active,
+  .review__arrow-left:active {
+    opacity: 0.1;
   }
 }

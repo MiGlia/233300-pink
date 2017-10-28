@@ -19,6 +19,17 @@
     border-radius: 30px;
   }
 
+  &--downloads:hover,
+  &--downloads:focus {
+    color: @text-pink;
+
+    background-color: @bg--white;
+  }
+
+  &--downloads:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
   &--green {
     width: 276px;
     margin-right: auto;
@@ -35,10 +46,20 @@
     cursor: pointer;
   }
 
+  &--green:hover,
+  &--green:focus {
+    background-color: #1c9b5e;
+  }
+
+  &--green:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--submit {
     display: block;
+    width: 280px;
     margin-bottom: 12px;
-    padding: 15px 88px 18px;
+    padding: 15px 88px 16px;
 
     font-weight: 700;
     font-size: @font-size--bigger;
@@ -51,9 +72,21 @@
     border-radius: 30px;
   }
 
+  &--submit:hover,
+  &--submit:focus {
+    color: @text--white;
+
+    background-color: @text-pink;
+  }
+
+  &--submit:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--reset {
     display: block;
-    padding: 15px 88px 18px;
+    width: 280px;
+    padding: 15px 88px 16px;
 
     font-weight: 700;
     font-size: @font-size--bigger;
@@ -66,6 +99,22 @@
     border-radius: 30px;
     opacity: 0.1;
   }
+
+  &--reset:hover,
+  &--reset:focus {
+    opacity: 0.3;
+  }
+
+  &--reset:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: @text--blue;
+    opacity: 0.3;
+  }
+
+  .button__wrapper {
+    padding-top: 45px;
+  }
 }
 
 @media (min-width: @tablet--width) {
@@ -76,11 +125,53 @@
   .button--downloads {
     padding: 16px 36px 16px 46px;
   }
+
+  .button--submit {
+    margin-bottom: 25px;
+    padding-right: 86px;
+    padding-left: 70px;
+  }
+
+  .button--successfully,
+  .button--error {
+    width: 295px;
+  }
+
+  .button__wrapper {
+    padding-top: 40px;
+  }
 }
 
 @media (min-width: @desktop--width) {
   .button--downloads {
-    font-size: 21px;
     padding: 15px 26px 15px 26px;
+
+    font-size: 21px;
+  }
+
+  .button__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+  }
+
+  .button--successfully {
+    width: 459px;
+  }
+
+  .button--submit,
+  .button--reset {
+    width: 183px;
+    margin-bottom: 0;
+    padding-right: 37px;
+    padding-left: 42px;
+  }
+
+  .button--submit {
+    margin-left: 20px;
+  }
+
+  .button--reset {
+    margin-left: 50px;
   }
 }

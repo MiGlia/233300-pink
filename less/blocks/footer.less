@@ -9,20 +9,12 @@
       display: block;
     }
   }
+}
 
-  .footer__wrapper {
-    padding-top: 55px;
+.footer__wrapper {
+  padding-top: 40px;
 
-    .wrapper();
-
-    @media (min-width: @tablet--width) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-top: 33px;
-      padding-bottom: 33px;
-    }
-  }
+  .wrapper();
 }
 
 .footer__logo-link--desktop {
@@ -40,54 +32,20 @@
   justify-content: center;
 }
 
-.copyright__text {
-  padding-top: 5px;
-  padding-right: 10px;
-
-  font-weight: 400;
-  font-size: @font-size;
-  line-height: @line-height--h2;
+.footer__logo-link:hover,
+.footer__logo-link:focus {
+  fill: @text-pink;
 }
 
-.social__list {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 40px;
-  padding-left: 20px;
-}
+.footer__logo-link:active {
+  opacity: 0.3;
 
-.social__link {
-  display: flex;
-  width: 45px;
-  height: 45px;
-  margin-right: 12px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 3px solid #e9ebec;
-  border-radius: 50%;
-
-  &--tw {
-    background-image: url("../img/icon-twitter.svg");
-  }
-
-  &--fb {
-    background-image: url("../img/icon-facebook.svg");
-  }
-
-  &--yt {
-    background-image: url("../img/icon-youtube.svg");
-  }
+  fill: @bg--blue;
 }
 
 @media (min-width: @tablet--width) {
   .footer__logo {
     padding-bottom: 0;
-  }
-
-  .social__list {
-    padding-bottom: 0;
-    padding-right: 10px;
   }
 
   .footer__logo-link {
@@ -96,28 +54,25 @@
 
   .footer__logo-link--tablet {
     display: block;
+
+    fill: @bg--blue;
   }
 
   .footer__copyright {
     align-self: center;
+    padding-top: 12px;
   }
 
-  .copyright__text {
-    padding-top: 10px;
-  }
-
-  .footer {
-    padding-top: 5px;
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 33px;
   }
 }
 
 @media (min-width: @desktop--width) {
-  .copyright__text {
-    font-weight: 400;
-    font-size: @font-size--bigger;
-    line-height: @line-height--small;
-  }
-
   .footer__logo {
     padding-bottom: 0;
   }
@@ -130,7 +85,7 @@
     display: none;
   }
 
-  .social__list {
-    padding-left: 40px;
+  .footer__copyright {
+    padding-top: 20px;
   }
 }

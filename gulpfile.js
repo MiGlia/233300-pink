@@ -17,6 +17,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
+var svgstore = require("gulp-svgstore");
 
 // ============минификация стилей==========
 
@@ -32,6 +33,16 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+// ==================SVG спрайт==========
+gulp.task("sprite", function() {
+  return gulp.src("img/sp-*.svg")
+  .pipe(svgstore({
+    inlineSvg :true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
 });
 
 // ========минификация изображений=========
@@ -50,7 +61,7 @@ gulp.task("image", function() {
 
 gulp.task("compress", function (cb) {
   pump([
-        gulp.src("js/*.js"),
+        gulp.src((["js/*.js","!js/*.min.js"])),
         uglify(),
       rename({suffix: ".min"}),
         gulp.dest("build/js")
@@ -66,8 +77,7 @@ gulp.task("html", function() {
     include()
   ]))
   .pipe(gulp.dest("build"));
-})
-
+});
 
 // ==========Изображения WEBP===========
 gulp.task("webp", function() {
@@ -79,20 +89,19 @@ gulp.task("webp", function() {
 // ===========копирование файлов=========
 gulp.task("copy", function() {
   return gulp.src([
-    "font/**/*.{woff,woff2}",
+    "fonts/**/*.{woff,woff2}",
     "img/**",
     "js/**"
   ], {
       base: "."
     })
     .pipe(gulp.dest("build"));
-  });
+  })
 
   // ================удаление build========
   gulp.task("clean", function() {
     return del("build");
   });
-
 
 // =============Последовательный запуск===
 gulp.task("build", function(done) {
@@ -104,6 +113,7 @@ gulp.task("build", function(done) {
          "html",
          "image",
          "webp",
+         "sprite",
          done
        );
 });

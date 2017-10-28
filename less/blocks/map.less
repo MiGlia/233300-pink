@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  min-height: 200px;
+  min-height: 220px;
   overflow: hidden;
 
   background-color: @bg--ligth-grey;
@@ -30,6 +30,20 @@
   background-position: center top;
 }
 
+.map::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  z-index: 100;
+
+  width: 36px;
+  height: 35px;
+
+  background-image: url("../img/icon-map-marker.svg");
+  transform: translate(50%, -50%);
+}
+
 @media (min-width: @tablet--width) {
   .map {
     height: 376px;
@@ -44,7 +58,7 @@
   .map::before {
     height: 80px;
 
-    background-size: 100% 68px;
+    background-size: 100% 64px;
   }
 }
 
@@ -63,6 +77,6 @@
   .map::before {
     height: 150px;
 
-    background-size: 100% 100px;
+    background-size: 100% 99px;
   }
 }

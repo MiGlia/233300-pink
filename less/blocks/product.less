@@ -1,19 +1,24 @@
 .product {
-  padding-top: 120px;
-  padding-bottom: 30px;
+  padding-top: 92px;
+  padding-bottom: 34px;
 
   text-transform: uppercase;
 
   background-color: @bg--ligth-grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 101% auto;
 
   .product__wrapper {
-    width: 100%;
-    overflow: hidden;
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    width: 100%;
     padding-bottom: 65px;
+    overflow: hidden;
 
     @media (min-width: @tablet--width) {
       width: @width-wrapper--tablet;
@@ -46,6 +51,54 @@
   background-position: 230px;
 }
 
+.product__toggle {
+  position: absolute;
+  bottom: 6px;
+  left: 54%;
+
+  display: flex;
+  width: 80px;
+  min-height: 20px;
+
+  transform: translateX(-50%);
+  padding-top: 40px;
+}
+
+.product__flag {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  z-index: 10;
+
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+}
+
+.product__name:nth-child(3)::before {
+  content: "хит";
+  position: absolute;
+  top: 20px;
+  left: 9px;
+  z-index: 100;
+
+  width: 28px;
+  height: 10px;
+
+  font-size: 14px;
+  line-height: 14px;
+  vertical-align: center;
+  text-align: center;
+  color: @bg--white;
+  text-transform: uppercase;
+
+  background-color: @text-pink;
+  transform: rotate(-45deg);
+}
+
+.product__flag--hit {
+  background: url("../img/bg-hit.svg") no-repeat 0 0;
+}
 
 .product__name-title {
   margin: 0;
@@ -57,6 +110,7 @@
 
 .product__cost {
   margin: 0;
+  padding-top: 4px;
   padding-bottom: 20px;
 
   font-weight: 300;
@@ -65,9 +119,12 @@
 }
 
 .product__name {
-  padding-top: 20px;
+  position: relative;
+
+  padding-top: 15px;
 
   border: 2px solid @text--white;
+  border-top-color: @bg--blue;
 }
 
 .product__item {
@@ -77,10 +134,10 @@
   font-weight: 400;
   font-size: @font-size;
   line-height: @line-height--big;
+  text-align: left;
   color: @text--blue;
 
   border: 2px solid #e5e5e5;
-  text-align: left;
 }
 
 .product__list {
@@ -91,6 +148,7 @@
   border-collapse: collapse;
 
   transform: translateX(0);
+
   transition: 0.6s;
 }
 
@@ -104,15 +162,12 @@
   background: none;
 }
 
-.product__toggle {
-  padding-top: 40px;
-}
-
 .product__radio-left:checked ~ .slider-toggles .slider-toggles__control-left,
 .product__radio-middle:checked ~ .slider-toggles .slider-toggles__control-middle,
 .product__radio-right:checked ~ .slider-toggles .slider-toggles__control-right {
   background-color: @bg--white;
   border: 3px solid @bg--blue;
+  opacity: 1;
 }
 
 .product__radio-left:checked ~ .product__list {
@@ -141,6 +196,20 @@
     transform: none;
   }
 
+  .product__flag {
+    width: 61px;
+    height: 61px;
+  }
+
+  .product__flag--hit {
+    background: url("../img/bg-hit-tablet.svg") no-repeat 0 0;
+  }
+
+  .product__name:nth-child(3)::before {
+    top: 12px;
+    left: 5px;
+  }
+
   .product__name--empty {
     display: block;
     min-height: 78px;
@@ -151,16 +220,17 @@
 
   .product__item--yes {
     background-position: center;
-    background-size: 15%;
+    background-size: 20%;
   }
 
   .product__item--no {
     background-position: center;
-    background-size: 10%;
+    background-size: 15%;
   }
 
   .product {
-    padding-top: 110px;
+    padding-top: 76px;
+    padding-bottom: 0;
   }
 
   .product__name-title {
@@ -170,6 +240,7 @@
   }
 
   .product__cost {
+    padding-top: 0;
     padding-bottom: 0;
 
     font-weight: 300;
@@ -197,6 +268,10 @@
   .product__list-body {
     background-color: @bg--white;
   }
+
+  .product__wrapper {
+    padding-top: 10px;
+  }
 }
 
 @media (min-width: @desktop--width) {
@@ -208,6 +283,20 @@
 
   .product__name--empty {
     min-height: 98px;
+  }
+
+  .product__flag {
+    width: 74px;
+    height: 73px;
+  }
+
+  .product__name:nth-child(3)::before {
+    top: 20px;
+    left: 9px;
+  }
+
+  .product__flag--hit {
+    background: url("../img/bg-hit.svg") no-repeat 0 0;
   }
 
   .product__list {
@@ -223,12 +312,25 @@
   .product__item {
     min-width: 234px;
     padding: 13px 24px 16px;
+  }
 
-    text-transform: uppercase;
+  .product__item--empty {
+    padding-left: 20px;
+
+    font-size: @font-size--bigger;
+    line-height: @line-height--base;
   }
 
   .product {
-    padding-top: 140px;
+    padding-top: 127px;
     padding-bottom: 10px;
+  }
+
+  .product__item--yes {
+    background-size: 15%;
+  }
+
+  .product__item--no {
+    background-size: 10%;
   }
 }
