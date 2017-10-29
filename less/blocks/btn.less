@@ -111,10 +111,10 @@
     background-color: @text--blue;
     opacity: 0.3;
   }
+}
 
-  .button__wrapper {
-    padding-top: 45px;
-  }
+.button__wrapper {
+  padding-top: 45px;
 }
 
 @media (min-width: @tablet--width) {
@@ -123,13 +123,20 @@
   }
 
   .button--downloads {
-    padding: 16px 36px 16px 46px;
+    padding: 16px 40px 16px 46px;
   }
 
   .button--submit {
+    width: 260px;
     margin-bottom: 25px;
-    padding-right: 86px;
-    padding-left: 70px;
+    margin-left: 10px;
+    padding-right: 75px;
+    padding-left: 60px;
+  }
+
+  .button--reset {
+    width: 260px;
+    margin-left: 10px;
   }
 
   .button--successfully,
@@ -138,6 +145,7 @@
   }
 
   .button__wrapper {
+    margin-right: 10px;
     padding-top: 40px;
   }
 }

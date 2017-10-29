@@ -56,10 +56,11 @@
   margin-top: 20px;
   padding-top: 12px;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 20px;
 
   font-size: @font-size--bigger;
   line-height: @line-height--base;
+  letter-spacing: 0.4px;
 
   border-radius: 2px;
 
@@ -74,8 +75,6 @@
   border-color: @text-pink;
   outline: none;
 }
-
-// =========================================
 
 .contest-data__label--radio::before {
   content: "";
@@ -136,7 +135,6 @@
   fill: @text-pink;
 }
 
-// ==============================================
 .contest-data__list-item {
   display: flex;
   flex-direction: column;
@@ -151,6 +149,7 @@
 
   font-size: @font-size--bigger;
   line-height: @line-height--h2;
+  letter-spacing: 0.4px;
 
   border: 2px solid @border-grey;
   border-radius: 2px;
@@ -267,7 +266,7 @@
   .contest-data__intro {
     width: 500px;
     padding-top: 95px;
-    padding-bottom: 74px;
+    padding-bottom: 72px;
 
     font-weight: 400;
     font-size: @font-size--bigger;
@@ -350,12 +349,16 @@
 
   .contest-data__wrapper--app {
     order: 1;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 
   .contest-data__block--personal {
     order: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+
+  .contest-data__block--personal .contest-data__list-item {
+    margin-bottom: 52px;
   }
 
   .contest-data__block--date {
@@ -374,7 +377,7 @@
 
   .contest-data__wrapper-grey--achievements {
     order: 3;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 
     background-color: @bg--white;
   }
@@ -445,8 +448,8 @@
   }
 
   .contest-data__list--achievements {
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 45px;
+    padding-left: 60px;
   }
 
   .contest-data__list--achievements .contest-data__list-item {
@@ -481,6 +484,14 @@
   .contest-data__block--bg-grey .contest-data__list-item {
     padding-left: 55px;
   }
+
+  .contest-data__block--date .contest-data__list-item--phone {
+    margin-bottom: 28px;
+  }
+
+  .contest-data__label--checkbox {
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: @desktop--width) {
@@ -492,7 +503,7 @@
   }
 
   .contest-data__list-item--phone::before {
-    right: 84px;
+    right: 86px;
   }
 
   .contest-data__list-item--phone::after {
@@ -517,8 +528,9 @@
 
   .contest-data__block--personal {
     width: 50%;
-    padding-top: 12px;
+    padding-top: 8px;
     padding-right: 35px;
+    padding-bottom: 5px;
   }
 
   .contest-data__wrapper--app {
@@ -544,7 +556,7 @@
 
   .contest-data__wrapper-grey--achievements {
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 
   .contest-data__wrapper-grey--achievements .contest-data__block {
@@ -641,5 +653,9 @@
 
   .contest-data__block--textarea {
     padding-bottom: 38px;
+  }
+
+  .contest-data__list-item--mail::before {
+    top: 26px;
   }
 }

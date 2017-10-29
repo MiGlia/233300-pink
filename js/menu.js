@@ -1,7 +1,6 @@
-
   var navMain = document.querySelector('.navigation');
   var navToggle = document.querySelector('.header__button-toggle');
-  var header = document.querySelector('.header__wrapper--nojs');
+  var header = document.querySelector('.header__wrapper');
 
   navMain.classList.remove('navigation--nojs');
   header.classList.remove('header__wrapper--nojs');

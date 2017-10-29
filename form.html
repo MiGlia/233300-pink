@@ -47,7 +47,7 @@
   </div>
   </header>
   <main class="form-page">
-    <section class="form-page__intro">
+    <section class="form-page__intro form-page__intro--nojs">
       <div class="form-page__wrapper">
         <h1 class="form-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
@@ -60,11 +60,11 @@
           <ul class="contest-data__list">
             <li class="contest-data__list-item">
               <label class="contest-data__label-info" for="surname">Фамилия:</label>
-              <input class="contest-data__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required="">
+              <input class="contest-data__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
             </li>
             <li class="contest-data__list-item">
               <label class="contest-data__label-info" for="name">Имя:</label>
-              <input class="contest-data__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required="">
+              <input class="contest-data__input" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
             </li>
             <li class="contest-data__list-item">
               <label class="contest-data__label-info" for="patronymic">Отчество:</label>
@@ -152,7 +152,7 @@
             <ul class="contest-data__list">
               <li class="contest-data__list-item">
                 <input class="contest-data__input visually-hidden" type="radio" id="select-ios" name="select-platform" checked="">
-                <label class="contest-data__label contest-data__label--radio" for="select-ios">Pink Для Ios</label>
+                <label class="contest-data__label contest-data__label--radio" for="select-ios">Pink Для iOS</label>
               </li>
               <li class="contest-data__list-item">
                 <input class="contest-data__input visually-hidden" type="radio" id="select-android" name="select-platform">
@@ -177,7 +177,7 @@
     </section>
     <div class="popup popup--error">
       <h3 class="popup__title">Что-то пошло не&nbsp;так!</h3>
-      <p class="popup__text">Проверьте поля, выделенные красным. Скорее всего, вы&nbsp;забыли их&nbsp;заполнить</p>
+      <p class="popup__text">Проверьте поля, выделенные красным, cкорее всего, вы&nbsp;забыли их&nbsp;заполнить</p>
       <button class="button--green button button--error">Ok</button>
     </div>
     <div class="popup popup--successfully">
@@ -198,7 +198,7 @@
       </a>
       <section class="footer__social social">
         <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <ul class="social__list">
+        <ul class="social__list social__list--left">
           <li class="social__item">
             <a class="social__link social__link--tw" href="#"><span class="visually-hidden">Твиттер</span>
               <svg class="social__icon social__icon--tw" width="17.5px" height="14.663px"><use xlink:href="img/sprite.svg#sp-icon-twitter"></use></svg>
@@ -225,7 +225,8 @@
     </div>
   </footer>
   <script src="js/picturefill.min.js"></script>
-  <script src="js/menu.min.js"></script>
+  <script src="js/menu-form.min.js"></script>
   <script src="js/svg4everbody.min.js"></script>
+  <script src="js/menu.min.js"></script>
 </body>
 </html>
